@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # DataCleanerEnv: Real-World Data Cleaning for AI Agents
 
 An OpenEnv environment simulating real-world data cleaning and ETL tasks. AI agents learn to autonomously clean messy datasets by applying operations to fix missing values, duplicates, type errors, and outliers.
@@ -511,5 +511,3 @@ This environment is provided as-is for research and evaluation purposes.
 **OpenEnv Version**: 1.0  
 **Status**: ✓ Validated and Ready for Submission
 =======
-# Scaler-Hackathone-Meta
->>>>>>> dddffac765f83085a14e2044e66e6408dc582c86
