@@ -1,0 +1,5608 @@
+{
+  "task_id": "task_easy",
+  "difficulty": "easy",
+  "description": "Remove all duplicate rows from an employee email list",
+  "expected_operations": [
+    "REMOVE_DUPLICATES"
+  ],
+  "expected_issues": [
+    "duplicates"
+  ],
+  "datasets": [
+    {
+      "id": "task_easy_dataset_0",
+      "name": "employees_0.csv",
+      "dirty_data": [
+        {
+          "employee_id": 0,
+          "name": "person_0",
+          "email": "user_0@example.com",
+          "department": "value_0"
+        },
+        {
+          "employee_id": 1,
+          "name": "person_1",
+          "email": "user_1@example.com",
+          "department": "value_1"
+        },
+        {
+          "employee_id": 2,
+          "name": "person_2",
+          "email": "user_2@example.com",
+          "department": "value_2"
+        },
+        {
+          "employee_id": 3,
+          "name": "person_3",
+          "email": "user_3@example.com",
+          "department": "value_3"
+        },
+        {
+          "employee_id": 4,
+          "name": "person_4",
+          "email": "user_4@example.com",
+          "department": "value_4"
+        },
+        {
+          "employee_id": 5,
+          "name": "person_5",
+          "email": "user_5@example.com",
+          "department": "value_5"
+        },
+        {
+          "employee_id": 6,
+          "name": "person_6",
+          "email": "user_6@example.com",
+          "department": "value_6"
+        },
+        {
+          "employee_id": 7,
+          "name": "person_7",
+          "email": "user_7@example.com",
+          "department": "value_7"
+        },
+        {
+          "employee_id": 8,
+          "name": "person_8",
+          "email": "user_8@example.com",
+          "department": "value_8"
+        },
+        {
+          "employee_id": 9,
+          "name": "person_9",
+          "email": "user_9@example.com",
+          "department": "value_9"
+        },
+        {
+          "employee_id": 10,
+          "name": "person_10",
+          "email": "user_10@example.com",
+          "department": "value_10"
+        },
+        {
+          "employee_id": 11,
+          "name": "person_11",
+          "email": "user_11@example.com",
+          "department": "value_11"
+        },
+        {
+          "employee_id": 12,
+          "name": "person_12",
+          "email": "user_12@example.com",
+          "department": "value_12"
+        },
+        {
+          "employee_id": 13,
+          "name": "person_13",
+          "email": "user_13@example.com",
+          "department": "value_13"
+        },
+        {
+          "employee_id": 14,
+          "name": "person_14",
+          "email": "user_14@example.com",
+          "department": "value_14"
+        },
+        {
+          "employee_id": 15,
+          "name": "person_15",
+          "email": "user_15@example.com",
+          "department": "value_15"
+        },
+        {
+          "employee_id": 16,
+          "name": "person_16",
+          "email": "user_16@example.com",
+          "department": "value_16"
+        },
+        {
+          "employee_id": 17,
+          "name": "person_17",
+          "email": "user_17@example.com",
+          "department": "value_17"
+        },
+        {
+          "employee_id": 18,
+          "name": "person_18",
+          "email": "user_18@example.com",
+          "department": "value_18"
+        },
+        {
+          "employee_id": 19,
+          "name": "person_19",
+          "email": "user_19@example.com",
+          "department": "value_19"
+        },
+        {
+          "employee_id": 20,
+          "name": "person_20",
+          "email": "user_20@example.com",
+          "department": "value_20"
+        },
+        {
+          "employee_id": 21,
+          "name": "person_21",
+          "email": "user_21@example.com",
+          "department": "value_21"
+        },
+        {
+          "employee_id": 22,
+          "name": "person_22",
+          "email": "user_22@example.com",
+          "department": "value_22"
+        },
+        {
+          "employee_id": 23,
+          "name": "person_23",
+          "email": "user_23@example.com",
+          "department": "value_23"
+        },
+        {
+          "employee_id": 24,
+          "name": "person_24",
+          "email": "user_24@example.com",
+          "department": "value_24"
+        },
+        {
+          "employee_id": 25,
+          "name": "person_25",
+          "email": "user_25@example.com",
+          "department": "value_25"
+        },
+        {
+          "employee_id": 26,
+          "name": "person_26",
+          "email": "user_26@example.com",
+          "department": "value_26"
+        },
+        {
+          "employee_id": 27,
+          "name": "person_27",
+          "email": "user_27@example.com",
+          "department": "value_27"
+        },
+        {
+          "employee_id": 28,
+          "name": "person_28",
+          "email": "user_28@example.com",
+          "department": "value_28"
+        },
+        {
+          "employee_id": 29,
+          "name": "person_29",
+          "email": "user_29@example.com",
+          "department": "value_29"
+        },
+        {
+          "employee_id": 30,
+          "name": "person_30",
+          "email": "user_30@example.com",
+          "department": "value_30"
+        },
+        {
+          "employee_id": 31,
+          "name": "person_31",
+          "email": "user_31@example.com",
+          "department": "value_31"
+        },
+        {
+          "employee_id": 32,
+          "name": "person_32",
+          "email": "user_32@example.com",
+          "department": "value_32"
+        },
+        {
+          "employee_id": 33,
+          "name": "person_33",
+          "email": "user_33@example.com",
+          "department": "value_33"
+        },
+        {
+          "employee_id": 34,
+          "name": "person_34",
+          "email": "user_34@example.com",
+          "department": "value_34"
+        },
+        {
+          "employee_id": 35,
+          "name": "person_35",
+          "email": "user_35@example.com",
+          "department": "value_35"
+        },
+        {
+          "employee_id": 36,
+          "name": "person_36",
+          "email": "user_36@example.com",
+          "department": "value_36"
+        },
+        {
+          "employee_id": 37,
+          "name": "person_37",
+          "email": "user_37@example.com",
+          "department": "value_37"
+        },
+        {
+          "employee_id": 38,
+          "name": "person_38",
+          "email": "user_38@example.com",
+          "department": "value_38"
+        },
+        {
+          "employee_id": 39,
+          "name": "person_39",
+          "email": "user_39@example.com",
+          "department": "value_39"
+        },
+        {
+          "employee_id": 40,
+          "name": "person_40",
+          "email": "user_40@example.com",
+          "department": "value_40"
+        },
+        {
+          "employee_id": 41,
+          "name": "person_41",
+          "email": "user_41@example.com",
+          "department": "value_41"
+        },
+        {
+          "employee_id": 42,
+          "name": "person_42",
+          "email": "user_42@example.com",
+          "department": "value_42"
+        },
+        {
+          "employee_id": 43,
+          "name": "person_43",
+          "email": "user_43@example.com",
+          "department": "value_43"
+        },
+        {
+          "employee_id": 44,
+          "name": "person_44",
+          "email": "user_44@example.com",
+          "department": "value_44"
+        },
+        {
+          "employee_id": 45,
+          "name": "person_45",
+          "email": "user_45@example.com",
+          "department": "value_45"
+        },
+        {
+          "employee_id": 46,
+          "name": "person_46",
+          "email": "user_46@example.com",
+          "department": "value_46"
+        },
+        {
+          "employee_id": 47,
+          "name": "person_47",
+          "email": "user_47@example.com",
+          "department": "value_47"
+        },
+        {
+          "employee_id": 48,
+          "name": "person_48",
+          "email": "user_48@example.com",
+          "department": "value_48"
+        },
+        {
+          "employee_id": 49,
+          "name": "person_49",
+          "email": "user_49@example.com",
+          "department": "value_49"
+        },
+        {
+          "employee_id": 50,
+          "name": "person_50",
+          "email": "user_50@example.com",
+          "department": "value_50"
+        },
+        {
+          "employee_id": 51,
+          "name": "person_51",
+          "email": "user_51@example.com",
+          "department": "value_51"
+        },
+        {
+          "employee_id": 52,
+          "name": "person_52",
+          "email": "user_52@example.com",
+          "department": "value_52"
+        },
+        {
+          "employee_id": 53,
+          "name": "person_53",
+          "email": "user_53@example.com",
+          "department": "value_53"
+        },
+        {
+          "employee_id": 54,
+          "name": "person_54",
+          "email": "user_54@example.com",
+          "department": "value_54"
+        },
+        {
+          "employee_id": 55,
+          "name": "person_55",
+          "email": "user_55@example.com",
+          "department": "value_55"
+        },
+        {
+          "employee_id": 56,
+          "name": "person_56",
+          "email": "user_56@example.com",
+          "department": "value_56"
+        },
+        {
+          "employee_id": 57,
+          "name": "person_57",
+          "email": "user_57@example.com",
+          "department": "value_57"
+        },
+        {
+          "employee_id": 58,
+          "name": "person_58",
+          "email": "user_58@example.com",
+          "department": "value_58"
+        },
+        {
+          "employee_id": 59,
+          "name": "person_59",
+          "email": "user_59@example.com",
+          "department": "value_59"
+        },
+        {
+          "employee_id": 60,
+          "name": "person_60",
+          "email": "user_60@example.com",
+          "department": "value_60"
+        },
+        {
+          "employee_id": 61,
+          "name": "person_61",
+          "email": "user_61@example.com",
+          "department": "value_61"
+        },
+        {
+          "employee_id": 62,
+          "name": "person_62",
+          "email": "user_62@example.com",
+          "department": "value_62"
+        },
+        {
+          "employee_id": 63,
+          "name": "person_63",
+          "email": "user_63@example.com",
+          "department": "value_63"
+        },
+        {
+          "employee_id": 64,
+          "name": "person_64",
+          "email": "user_64@example.com",
+          "department": "value_64"
+        },
+        {
+          "employee_id": 65,
+          "name": "person_65",
+          "email": "user_65@example.com",
+          "department": "value_65"
+        },
+        {
+          "employee_id": 66,
+          "name": "person_66",
+          "email": "user_66@example.com",
+          "department": "value_66"
+        },
+        {
+          "employee_id": 67,
+          "name": "person_67",
+          "email": "user_67@example.com",
+          "department": "value_67"
+        },
+        {
+          "employee_id": 68,
+          "name": "person_68",
+          "email": "user_68@example.com",
+          "department": "value_68"
+        },
+        {
+          "employee_id": 69,
+          "name": "person_69",
+          "email": "user_69@example.com",
+          "department": "value_69"
+        },
+        {
+          "employee_id": 70,
+          "name": "person_70",
+          "email": "user_70@example.com",
+          "department": "value_70"
+        },
+        {
+          "employee_id": 71,
+          "name": "person_71",
+          "email": "user_71@example.com",
+          "department": "value_71"
+        },
+        {
+          "employee_id": 72,
+          "name": "person_72",
+          "email": "user_72@example.com",
+          "department": "value_72"
+        },
+        {
+          "employee_id": 73,
+          "name": "person_73",
+          "email": "user_73@example.com",
+          "department": "value_73"
+        },
+        {
+          "employee_id": 74,
+          "name": "person_74",
+          "email": "user_74@example.com",
+          "department": "value_74"
+        },
+        {
+          "employee_id": 75,
+          "name": "person_75",
+          "email": "user_75@example.com",
+          "department": "value_75"
+        },
+        {
+          "employee_id": 76,
+          "name": "person_76",
+          "email": "user_76@example.com",
+          "department": "value_76"
+        },
+        {
+          "employee_id": 77,
+          "name": "person_77",
+          "email": "user_77@example.com",
+          "department": "value_77"
+        },
+        {
+          "employee_id": 78,
+          "name": "person_78",
+          "email": "user_78@example.com",
+          "department": "value_78"
+        },
+        {
+          "employee_id": 79,
+          "name": "person_79",
+          "email": "user_79@example.com",
+          "department": "value_79"
+        },
+        {
+          "employee_id": 80,
+          "name": "person_80",
+          "email": "user_80@example.com",
+          "department": "value_80"
+        },
+        {
+          "employee_id": 81,
+          "name": "person_81",
+          "email": "user_81@example.com",
+          "department": "value_81"
+        },
+        {
+          "employee_id": 82,
+          "name": "person_82",
+          "email": "user_82@example.com",
+          "department": "value_82"
+        },
+        {
+          "employee_id": 83,
+          "name": "person_83",
+          "email": "user_83@example.com",
+          "department": "value_83"
+        },
+        {
+          "employee_id": 84,
+          "name": "person_84",
+          "email": "user_84@example.com",
+          "department": "value_84"
+        },
+        {
+          "employee_id": 85,
+          "name": "person_85",
+          "email": "user_85@example.com",
+          "department": "value_85"
+        },
+        {
+          "employee_id": 86,
+          "name": "person_86",
+          "email": "user_86@example.com",
+          "department": "value_86"
+        },
+        {
+          "employee_id": 87,
+          "name": "person_87",
+          "email": "user_87@example.com",
+          "department": "value_87"
+        },
+        {
+          "employee_id": 88,
+          "name": "person_88",
+          "email": "user_88@example.com",
+          "department": "value_88"
+        },
+        {
+          "employee_id": 89,
+          "name": "person_89",
+          "email": "user_89@example.com",
+          "department": "value_89"
+        },
+        {
+          "employee_id": 90,
+          "name": "person_90",
+          "email": "user_90@example.com",
+          "department": "value_90"
+        },
+        {
+          "employee_id": 91,
+          "name": "person_91",
+          "email": "user_91@example.com",
+          "department": "value_91"
+        },
+        {
+          "employee_id": 92,
+          "name": "person_92",
+          "email": "user_92@example.com",
+          "department": "value_92"
+        },
+        {
+          "employee_id": 93,
+          "name": "person_93",
+          "email": "user_93@example.com",
+          "department": "value_93"
+        },
+        {
+          "employee_id": 94,
+          "name": "person_94",
+          "email": "user_94@example.com",
+          "department": "value_94"
+        },
+        {
+          "employee_id": 95,
+          "name": "person_95",
+          "email": "user_95@example.com",
+          "department": "value_95"
+        },
+        {
+          "employee_id": 96,
+          "name": "person_96",
+          "email": "user_96@example.com",
+          "department": "value_96"
+        },
+        {
+          "employee_id": 97,
+          "name": "person_97",
+          "email": "user_97@example.com",
+          "department": "value_97"
+        },
+        {
+          "employee_id": 98,
+          "name": "person_98",
+          "email": "user_98@example.com",
+          "department": "value_98"
+        },
+        {
+          "employee_id": 99,
+          "name": "person_99",
+          "email": "user_99@example.com",
+          "department": "value_99"
+        },
+        {
+          "employee_id": 100,
+          "name": "person_100",
+          "email": "user_100@example.com",
+          "department": "value_100"
+        },
+        {
+          "employee_id": 101,
+          "name": "person_101",
+          "email": "user_101@example.com",
+          "department": "value_101"
+        },
+        {
+          "employee_id": 102,
+          "name": "person_102",
+          "email": "user_102@example.com",
+          "department": "value_102"
+        },
+        {
+          "employee_id": 103,
+          "name": "person_103",
+          "email": "user_103@example.com",
+          "department": "value_103"
+        },
+        {
+          "employee_id": 104,
+          "name": "person_104",
+          "email": "user_104@example.com",
+          "department": "value_104"
+        },
+        {
+          "employee_id": 105,
+          "name": "person_105",
+          "email": "user_105@example.com",
+          "department": "value_105"
+        },
+        {
+          "employee_id": 106,
+          "name": "person_106",
+          "email": "user_106@example.com",
+          "department": "value_106"
+        },
+        {
+          "employee_id": 107,
+          "name": "person_107",
+          "email": "user_107@example.com",
+          "department": "value_107"
+        },
+        {
+          "employee_id": 108,
+          "name": "person_108",
+          "email": "user_108@example.com",
+          "department": "value_108"
+        },
+        {
+          "employee_id": 109,
+          "name": "person_109",
+          "email": "user_109@example.com",
+          "department": "value_109"
+        },
+        {
+          "employee_id": 110,
+          "name": "person_110",
+          "email": "user_110@example.com",
+          "department": "value_110"
+        },
+        {
+          "employee_id": 111,
+          "name": "person_111",
+          "email": "user_111@example.com",
+          "department": "value_111"
+        },
+        {
+          "employee_id": 112,
+          "name": "person_112",
+          "email": "user_112@example.com",
+          "department": "value_112"
+        },
+        {
+          "employee_id": 113,
+          "name": "person_113",
+          "email": "user_113@example.com",
+          "department": "value_113"
+        },
+        {
+          "employee_id": 114,
+          "name": "person_114",
+          "email": "user_114@example.com",
+          "department": "value_114"
+        },
+        {
+          "employee_id": 115,
+          "name": "person_115",
+          "email": "user_115@example.com",
+          "department": "value_115"
+        },
+        {
+          "employee_id": 116,
+          "name": "person_116",
+          "email": "user_116@example.com",
+          "department": "value_116"
+        },
+        {
+          "employee_id": 117,
+          "name": "person_117",
+          "email": "user_117@example.com",
+          "department": "value_117"
+        },
+        {
+          "employee_id": 118,
+          "name": "person_118",
+          "email": "user_118@example.com",
+          "department": "value_118"
+        },
+        {
+          "employee_id": 119,
+          "name": "person_119",
+          "email": "user_119@example.com",
+          "department": "value_119"
+        },
+        {
+          "employee_id": 120,
+          "name": "person_120",
+          "email": "user_120@example.com",
+          "department": "value_120"
+        },
+        {
+          "employee_id": 121,
+          "name": "person_121",
+          "email": "user_121@example.com",
+          "department": "value_121"
+        },
+        {
+          "employee_id": 122,
+          "name": "person_122",
+          "email": "user_122@example.com",
+          "department": "value_122"
+        },
+        {
+          "employee_id": 123,
+          "name": "person_123",
+          "email": "user_123@example.com",
+          "department": "value_123"
+        },
+        {
+          "employee_id": 124,
+          "name": "person_124",
+          "email": "user_124@example.com",
+          "department": "value_124"
+        },
+        {
+          "employee_id": 125,
+          "name": "person_125",
+          "email": "user_125@example.com",
+          "department": "value_125"
+        },
+        {
+          "employee_id": 126,
+          "name": "person_126",
+          "email": "user_126@example.com",
+          "department": "value_126"
+        },
+        {
+          "employee_id": 127,
+          "name": "person_127",
+          "email": "user_127@example.com",
+          "department": "value_127"
+        },
+        {
+          "employee_id": 128,
+          "name": "person_128",
+          "email": "user_128@example.com",
+          "department": "value_128"
+        },
+        {
+          "employee_id": 129,
+          "name": "person_129",
+          "email": "user_129@example.com",
+          "department": "value_129"
+        },
+        {
+          "employee_id": 130,
+          "name": "person_130",
+          "email": "user_130@example.com",
+          "department": "value_130"
+        },
+        {
+          "employee_id": 131,
+          "name": "person_131",
+          "email": "user_131@example.com",
+          "department": "value_131"
+        },
+        {
+          "employee_id": 132,
+          "name": "person_132",
+          "email": "user_132@example.com",
+          "department": "value_132"
+        },
+        {
+          "employee_id": 133,
+          "name": "person_133",
+          "email": "user_133@example.com",
+          "department": "value_133"
+        },
+        {
+          "employee_id": 134,
+          "name": "person_134",
+          "email": "user_134@example.com",
+          "department": "value_134"
+        },
+        {
+          "employee_id": 135,
+          "name": "person_135",
+          "email": "user_135@example.com",
+          "department": "value_135"
+        },
+        {
+          "employee_id": 136,
+          "name": "person_136",
+          "email": "user_136@example.com",
+          "department": "value_136"
+        },
+        {
+          "employee_id": 137,
+          "name": "person_137",
+          "email": "user_137@example.com",
+          "department": "value_137"
+        },
+        {
+          "employee_id": 138,
+          "name": "person_138",
+          "email": "user_138@example.com",
+          "department": "value_138"
+        },
+        {
+          "employee_id": 139,
+          "name": "person_139",
+          "email": "user_139@example.com",
+          "department": "value_139"
+        },
+        {
+          "employee_id": 140,
+          "name": "person_140",
+          "email": "user_140@example.com",
+          "department": "value_140"
+        },
+        {
+          "employee_id": 141,
+          "name": "person_141",
+          "email": "user_141@example.com",
+          "department": "value_141"
+        },
+        {
+          "employee_id": 142,
+          "name": "person_142",
+          "email": "user_142@example.com",
+          "department": "value_142"
+        },
+        {
+          "employee_id": 143,
+          "name": "person_143",
+          "email": "user_143@example.com",
+          "department": "value_143"
+        },
+        {
+          "employee_id": 144,
+          "name": "person_144",
+          "email": "user_144@example.com",
+          "department": "value_144"
+        },
+        {
+          "employee_id": 145,
+          "name": "person_145",
+          "email": "user_145@example.com",
+          "department": "value_145"
+        },
+        {
+          "employee_id": 146,
+          "name": "person_146",
+          "email": "user_146@example.com",
+          "department": "value_146"
+        },
+        {
+          "employee_id": 147,
+          "name": "person_147",
+          "email": "user_147@example.com",
+          "department": "value_147"
+        },
+        {
+          "employee_id": 148,
+          "name": "person_148",
+          "email": "user_148@example.com",
+          "department": "value_148"
+        },
+        {
+          "employee_id": 149,
+          "name": "person_149",
+          "email": "user_149@example.com",
+          "department": "value_149"
+        },
+        {
+          "employee_id": 28,
+          "name": "person_28",
+          "email": "user_28@example.com",
+          "department": "value_28"
+        },
+        {
+          "employee_id": 6,
+          "name": "person_6",
+          "email": "user_6@example.com",
+          "department": "value_6"
+        },
+        {
+          "employee_id": 70,
+          "name": "person_70",
+          "email": "user_70@example.com",
+          "department": "value_70"
+        },
+        {
+          "employee_id": 62,
+          "name": "person_62",
+          "email": "user_62@example.com",
+          "department": "value_62"
+        },
+        {
+          "employee_id": 57,
+          "name": "person_57",
+          "email": "user_57@example.com",
+          "department": "value_57"
+        },
+        {
+          "employee_id": 35,
+          "name": "person_35",
+          "email": "user_35@example.com",
+          "department": "value_35"
+        },
+        {
+          "employee_id": 26,
+          "name": "person_26",
+          "email": "user_26@example.com",
+          "department": "value_26"
+        },
+        {
+          "employee_id": 139,
+          "name": "person_139",
+          "email": "user_139@example.com",
+          "department": "value_139"
+        }
+      ],
+      "clean_data": [
+        {
+          "employee_id": 0,
+          "name": "person_0",
+          "email": "user_0@example.com",
+          "department": "value_0"
+        },
+        {
+          "employee_id": 1,
+          "name": "person_1",
+          "email": "user_1@example.com",
+          "department": "value_1"
+        },
+        {
+          "employee_id": 2,
+          "name": "person_2",
+          "email": "user_2@example.com",
+          "department": "value_2"
+        },
+        {
+          "employee_id": 3,
+          "name": "person_3",
+          "email": "user_3@example.com",
+          "department": "value_3"
+        },
+        {
+          "employee_id": 4,
+          "name": "person_4",
+          "email": "user_4@example.com",
+          "department": "value_4"
+        },
+        {
+          "employee_id": 5,
+          "name": "person_5",
+          "email": "user_5@example.com",
+          "department": "value_5"
+        },
+        {
+          "employee_id": 6,
+          "name": "person_6",
+          "email": "user_6@example.com",
+          "department": "value_6"
+        },
+        {
+          "employee_id": 7,
+          "name": "person_7",
+          "email": "user_7@example.com",
+          "department": "value_7"
+        },
+        {
+          "employee_id": 8,
+          "name": "person_8",
+          "email": "user_8@example.com",
+          "department": "value_8"
+        },
+        {
+          "employee_id": 9,
+          "name": "person_9",
+          "email": "user_9@example.com",
+          "department": "value_9"
+        },
+        {
+          "employee_id": 10,
+          "name": "person_10",
+          "email": "user_10@example.com",
+          "department": "value_10"
+        },
+        {
+          "employee_id": 11,
+          "name": "person_11",
+          "email": "user_11@example.com",
+          "department": "value_11"
+        },
+        {
+          "employee_id": 12,
+          "name": "person_12",
+          "email": "user_12@example.com",
+          "department": "value_12"
+        },
+        {
+          "employee_id": 13,
+          "name": "person_13",
+          "email": "user_13@example.com",
+          "department": "value_13"
+        },
+        {
+          "employee_id": 14,
+          "name": "person_14",
+          "email": "user_14@example.com",
+          "department": "value_14"
+        },
+        {
+          "employee_id": 15,
+          "name": "person_15",
+          "email": "user_15@example.com",
+          "department": "value_15"
+        },
+        {
+          "employee_id": 16,
+          "name": "person_16",
+          "email": "user_16@example.com",
+          "department": "value_16"
+        },
+        {
+          "employee_id": 17,
+          "name": "person_17",
+          "email": "user_17@example.com",
+          "department": "value_17"
+        },
+        {
+          "employee_id": 18,
+          "name": "person_18",
+          "email": "user_18@example.com",
+          "department": "value_18"
+        },
+        {
+          "employee_id": 19,
+          "name": "person_19",
+          "email": "user_19@example.com",
+          "department": "value_19"
+        },
+        {
+          "employee_id": 20,
+          "name": "person_20",
+          "email": "user_20@example.com",
+          "department": "value_20"
+        },
+        {
+          "employee_id": 21,
+          "name": "person_21",
+          "email": "user_21@example.com",
+          "department": "value_21"
+        },
+        {
+          "employee_id": 22,
+          "name": "person_22",
+          "email": "user_22@example.com",
+          "department": "value_22"
+        },
+        {
+          "employee_id": 23,
+          "name": "person_23",
+          "email": "user_23@example.com",
+          "department": "value_23"
+        },
+        {
+          "employee_id": 24,
+          "name": "person_24",
+          "email": "user_24@example.com",
+          "department": "value_24"
+        },
+        {
+          "employee_id": 25,
+          "name": "person_25",
+          "email": "user_25@example.com",
+          "department": "value_25"
+        },
+        {
+          "employee_id": 26,
+          "name": "person_26",
+          "email": "user_26@example.com",
+          "department": "value_26"
+        },
+        {
+          "employee_id": 27,
+          "name": "person_27",
+          "email": "user_27@example.com",
+          "department": "value_27"
+        },
+        {
+          "employee_id": 28,
+          "name": "person_28",
+          "email": "user_28@example.com",
+          "department": "value_28"
+        },
+        {
+          "employee_id": 29,
+          "name": "person_29",
+          "email": "user_29@example.com",
+          "department": "value_29"
+        },
+        {
+          "employee_id": 30,
+          "name": "person_30",
+          "email": "user_30@example.com",
+          "department": "value_30"
+        },
+        {
+          "employee_id": 31,
+          "name": "person_31",
+          "email": "user_31@example.com",
+          "department": "value_31"
+        },
+        {
+          "employee_id": 32,
+          "name": "person_32",
+          "email": "user_32@example.com",
+          "department": "value_32"
+        },
+        {
+          "employee_id": 33,
+          "name": "person_33",
+          "email": "user_33@example.com",
+          "department": "value_33"
+        },
+        {
+          "employee_id": 34,
+          "name": "person_34",
+          "email": "user_34@example.com",
+          "department": "value_34"
+        },
+        {
+          "employee_id": 35,
+          "name": "person_35",
+          "email": "user_35@example.com",
+          "department": "value_35"
+        },
+        {
+          "employee_id": 36,
+          "name": "person_36",
+          "email": "user_36@example.com",
+          "department": "value_36"
+        },
+        {
+          "employee_id": 37,
+          "name": "person_37",
+          "email": "user_37@example.com",
+          "department": "value_37"
+        },
+        {
+          "employee_id": 38,
+          "name": "person_38",
+          "email": "user_38@example.com",
+          "department": "value_38"
+        },
+        {
+          "employee_id": 39,
+          "name": "person_39",
+          "email": "user_39@example.com",
+          "department": "value_39"
+        },
+        {
+          "employee_id": 40,
+          "name": "person_40",
+          "email": "user_40@example.com",
+          "department": "value_40"
+        },
+        {
+          "employee_id": 41,
+          "name": "person_41",
+          "email": "user_41@example.com",
+          "department": "value_41"
+        },
+        {
+          "employee_id": 42,
+          "name": "person_42",
+          "email": "user_42@example.com",
+          "department": "value_42"
+        },
+        {
+          "employee_id": 43,
+          "name": "person_43",
+          "email": "user_43@example.com",
+          "department": "value_43"
+        },
+        {
+          "employee_id": 44,
+          "name": "person_44",
+          "email": "user_44@example.com",
+          "department": "value_44"
+        },
+        {
+          "employee_id": 45,
+          "name": "person_45",
+          "email": "user_45@example.com",
+          "department": "value_45"
+        },
+        {
+          "employee_id": 46,
+          "name": "person_46",
+          "email": "user_46@example.com",
+          "department": "value_46"
+        },
+        {
+          "employee_id": 47,
+          "name": "person_47",
+          "email": "user_47@example.com",
+          "department": "value_47"
+        },
+        {
+          "employee_id": 48,
+          "name": "person_48",
+          "email": "user_48@example.com",
+          "department": "value_48"
+        },
+        {
+          "employee_id": 49,
+          "name": "person_49",
+          "email": "user_49@example.com",
+          "department": "value_49"
+        },
+        {
+          "employee_id": 50,
+          "name": "person_50",
+          "email": "user_50@example.com",
+          "department": "value_50"
+        },
+        {
+          "employee_id": 51,
+          "name": "person_51",
+          "email": "user_51@example.com",
+          "department": "value_51"
+        },
+        {
+          "employee_id": 52,
+          "name": "person_52",
+          "email": "user_52@example.com",
+          "department": "value_52"
+        },
+        {
+          "employee_id": 53,
+          "name": "person_53",
+          "email": "user_53@example.com",
+          "department": "value_53"
+        },
+        {
+          "employee_id": 54,
+          "name": "person_54",
+          "email": "user_54@example.com",
+          "department": "value_54"
+        },
+        {
+          "employee_id": 55,
+          "name": "person_55",
+          "email": "user_55@example.com",
+          "department": "value_55"
+        },
+        {
+          "employee_id": 56,
+          "name": "person_56",
+          "email": "user_56@example.com",
+          "department": "value_56"
+        },
+        {
+          "employee_id": 57,
+          "name": "person_57",
+          "email": "user_57@example.com",
+          "department": "value_57"
+        },
+        {
+          "employee_id": 58,
+          "name": "person_58",
+          "email": "user_58@example.com",
+          "department": "value_58"
+        },
+        {
+          "employee_id": 59,
+          "name": "person_59",
+          "email": "user_59@example.com",
+          "department": "value_59"
+        },
+        {
+          "employee_id": 60,
+          "name": "person_60",
+          "email": "user_60@example.com",
+          "department": "value_60"
+        },
+        {
+          "employee_id": 61,
+          "name": "person_61",
+          "email": "user_61@example.com",
+          "department": "value_61"
+        },
+        {
+          "employee_id": 62,
+          "name": "person_62",
+          "email": "user_62@example.com",
+          "department": "value_62"
+        },
+        {
+          "employee_id": 63,
+          "name": "person_63",
+          "email": "user_63@example.com",
+          "department": "value_63"
+        },
+        {
+          "employee_id": 64,
+          "name": "person_64",
+          "email": "user_64@example.com",
+          "department": "value_64"
+        },
+        {
+          "employee_id": 65,
+          "name": "person_65",
+          "email": "user_65@example.com",
+          "department": "value_65"
+        },
+        {
+          "employee_id": 66,
+          "name": "person_66",
+          "email": "user_66@example.com",
+          "department": "value_66"
+        },
+        {
+          "employee_id": 67,
+          "name": "person_67",
+          "email": "user_67@example.com",
+          "department": "value_67"
+        },
+        {
+          "employee_id": 68,
+          "name": "person_68",
+          "email": "user_68@example.com",
+          "department": "value_68"
+        },
+        {
+          "employee_id": 69,
+          "name": "person_69",
+          "email": "user_69@example.com",
+          "department": "value_69"
+        },
+        {
+          "employee_id": 70,
+          "name": "person_70",
+          "email": "user_70@example.com",
+          "department": "value_70"
+        },
+        {
+          "employee_id": 71,
+          "name": "person_71",
+          "email": "user_71@example.com",
+          "department": "value_71"
+        },
+        {
+          "employee_id": 72,
+          "name": "person_72",
+          "email": "user_72@example.com",
+          "department": "value_72"
+        },
+        {
+          "employee_id": 73,
+          "name": "person_73",
+          "email": "user_73@example.com",
+          "department": "value_73"
+        },
+        {
+          "employee_id": 74,
+          "name": "person_74",
+          "email": "user_74@example.com",
+          "department": "value_74"
+        },
+        {
+          "employee_id": 75,
+          "name": "person_75",
+          "email": "user_75@example.com",
+          "department": "value_75"
+        },
+        {
+          "employee_id": 76,
+          "name": "person_76",
+          "email": "user_76@example.com",
+          "department": "value_76"
+        },
+        {
+          "employee_id": 77,
+          "name": "person_77",
+          "email": "user_77@example.com",
+          "department": "value_77"
+        },
+        {
+          "employee_id": 78,
+          "name": "person_78",
+          "email": "user_78@example.com",
+          "department": "value_78"
+        },
+        {
+          "employee_id": 79,
+          "name": "person_79",
+          "email": "user_79@example.com",
+          "department": "value_79"
+        },
+        {
+          "employee_id": 80,
+          "name": "person_80",
+          "email": "user_80@example.com",
+          "department": "value_80"
+        },
+        {
+          "employee_id": 81,
+          "name": "person_81",
+          "email": "user_81@example.com",
+          "department": "value_81"
+        },
+        {
+          "employee_id": 82,
+          "name": "person_82",
+          "email": "user_82@example.com",
+          "department": "value_82"
+        },
+        {
+          "employee_id": 83,
+          "name": "person_83",
+          "email": "user_83@example.com",
+          "department": "value_83"
+        },
+        {
+          "employee_id": 84,
+          "name": "person_84",
+          "email": "user_84@example.com",
+          "department": "value_84"
+        },
+        {
+          "employee_id": 85,
+          "name": "person_85",
+          "email": "user_85@example.com",
+          "department": "value_85"
+        },
+        {
+          "employee_id": 86,
+          "name": "person_86",
+          "email": "user_86@example.com",
+          "department": "value_86"
+        },
+        {
+          "employee_id": 87,
+          "name": "person_87",
+          "email": "user_87@example.com",
+          "department": "value_87"
+        },
+        {
+          "employee_id": 88,
+          "name": "person_88",
+          "email": "user_88@example.com",
+          "department": "value_88"
+        },
+        {
+          "employee_id": 89,
+          "name": "person_89",
+          "email": "user_89@example.com",
+          "department": "value_89"
+        },
+        {
+          "employee_id": 90,
+          "name": "person_90",
+          "email": "user_90@example.com",
+          "department": "value_90"
+        },
+        {
+          "employee_id": 91,
+          "name": "person_91",
+          "email": "user_91@example.com",
+          "department": "value_91"
+        },
+        {
+          "employee_id": 92,
+          "name": "person_92",
+          "email": "user_92@example.com",
+          "department": "value_92"
+        },
+        {
+          "employee_id": 93,
+          "name": "person_93",
+          "email": "user_93@example.com",
+          "department": "value_93"
+        },
+        {
+          "employee_id": 94,
+          "name": "person_94",
+          "email": "user_94@example.com",
+          "department": "value_94"
+        },
+        {
+          "employee_id": 95,
+          "name": "person_95",
+          "email": "user_95@example.com",
+          "department": "value_95"
+        },
+        {
+          "employee_id": 96,
+          "name": "person_96",
+          "email": "user_96@example.com",
+          "department": "value_96"
+        },
+        {
+          "employee_id": 97,
+          "name": "person_97",
+          "email": "user_97@example.com",
+          "department": "value_97"
+        },
+        {
+          "employee_id": 98,
+          "name": "person_98",
+          "email": "user_98@example.com",
+          "department": "value_98"
+        },
+        {
+          "employee_id": 99,
+          "name": "person_99",
+          "email": "user_99@example.com",
+          "department": "value_99"
+        },
+        {
+          "employee_id": 100,
+          "name": "person_100",
+          "email": "user_100@example.com",
+          "department": "value_100"
+        },
+        {
+          "employee_id": 101,
+          "name": "person_101",
+          "email": "user_101@example.com",
+          "department": "value_101"
+        },
+        {
+          "employee_id": 102,
+          "name": "person_102",
+          "email": "user_102@example.com",
+          "department": "value_102"
+        },
+        {
+          "employee_id": 103,
+          "name": "person_103",
+          "email": "user_103@example.com",
+          "department": "value_103"
+        },
+        {
+          "employee_id": 104,
+          "name": "person_104",
+          "email": "user_104@example.com",
+          "department": "value_104"
+        },
+        {
+          "employee_id": 105,
+          "name": "person_105",
+          "email": "user_105@example.com",
+          "department": "value_105"
+        },
+        {
+          "employee_id": 106,
+          "name": "person_106",
+          "email": "user_106@example.com",
+          "department": "value_106"
+        },
+        {
+          "employee_id": 107,
+          "name": "person_107",
+          "email": "user_107@example.com",
+          "department": "value_107"
+        },
+        {
+          "employee_id": 108,
+          "name": "person_108",
+          "email": "user_108@example.com",
+          "department": "value_108"
+        },
+        {
+          "employee_id": 109,
+          "name": "person_109",
+          "email": "user_109@example.com",
+          "department": "value_109"
+        },
+        {
+          "employee_id": 110,
+          "name": "person_110",
+          "email": "user_110@example.com",
+          "department": "value_110"
+        },
+        {
+          "employee_id": 111,
+          "name": "person_111",
+          "email": "user_111@example.com",
+          "department": "value_111"
+        },
+        {
+          "employee_id": 112,
+          "name": "person_112",
+          "email": "user_112@example.com",
+          "department": "value_112"
+        },
+        {
+          "employee_id": 113,
+          "name": "person_113",
+          "email": "user_113@example.com",
+          "department": "value_113"
+        },
+        {
+          "employee_id": 114,
+          "name": "person_114",
+          "email": "user_114@example.com",
+          "department": "value_114"
+        },
+        {
+          "employee_id": 115,
+          "name": "person_115",
+          "email": "user_115@example.com",
+          "department": "value_115"
+        },
+        {
+          "employee_id": 116,
+          "name": "person_116",
+          "email": "user_116@example.com",
+          "department": "value_116"
+        },
+        {
+          "employee_id": 117,
+          "name": "person_117",
+          "email": "user_117@example.com",
+          "department": "value_117"
+        },
+        {
+          "employee_id": 118,
+          "name": "person_118",
+          "email": "user_118@example.com",
+          "department": "value_118"
+        },
+        {
+          "employee_id": 119,
+          "name": "person_119",
+          "email": "user_119@example.com",
+          "department": "value_119"
+        },
+        {
+          "employee_id": 120,
+          "name": "person_120",
+          "email": "user_120@example.com",
+          "department": "value_120"
+        },
+        {
+          "employee_id": 121,
+          "name": "person_121",
+          "email": "user_121@example.com",
+          "department": "value_121"
+        },
+        {
+          "employee_id": 122,
+          "name": "person_122",
+          "email": "user_122@example.com",
+          "department": "value_122"
+        },
+        {
+          "employee_id": 123,
+          "name": "person_123",
+          "email": "user_123@example.com",
+          "department": "value_123"
+        },
+        {
+          "employee_id": 124,
+          "name": "person_124",
+          "email": "user_124@example.com",
+          "department": "value_124"
+        },
+        {
+          "employee_id": 125,
+          "name": "person_125",
+          "email": "user_125@example.com",
+          "department": "value_125"
+        },
+        {
+          "employee_id": 126,
+          "name": "person_126",
+          "email": "user_126@example.com",
+          "department": "value_126"
+        },
+        {
+          "employee_id": 127,
+          "name": "person_127",
+          "email": "user_127@example.com",
+          "department": "value_127"
+        },
+        {
+          "employee_id": 128,
+          "name": "person_128",
+          "email": "user_128@example.com",
+          "department": "value_128"
+        },
+        {
+          "employee_id": 129,
+          "name": "person_129",
+          "email": "user_129@example.com",
+          "department": "value_129"
+        },
+        {
+          "employee_id": 130,
+          "name": "person_130",
+          "email": "user_130@example.com",
+          "department": "value_130"
+        },
+        {
+          "employee_id": 131,
+          "name": "person_131",
+          "email": "user_131@example.com",
+          "department": "value_131"
+        },
+        {
+          "employee_id": 132,
+          "name": "person_132",
+          "email": "user_132@example.com",
+          "department": "value_132"
+        },
+        {
+          "employee_id": 133,
+          "name": "person_133",
+          "email": "user_133@example.com",
+          "department": "value_133"
+        },
+        {
+          "employee_id": 134,
+          "name": "person_134",
+          "email": "user_134@example.com",
+          "department": "value_134"
+        },
+        {
+          "employee_id": 135,
+          "name": "person_135",
+          "email": "user_135@example.com",
+          "department": "value_135"
+        },
+        {
+          "employee_id": 136,
+          "name": "person_136",
+          "email": "user_136@example.com",
+          "department": "value_136"
+        },
+        {
+          "employee_id": 137,
+          "name": "person_137",
+          "email": "user_137@example.com",
+          "department": "value_137"
+        },
+        {
+          "employee_id": 138,
+          "name": "person_138",
+          "email": "user_138@example.com",
+          "department": "value_138"
+        },
+        {
+          "employee_id": 139,
+          "name": "person_139",
+          "email": "user_139@example.com",
+          "department": "value_139"
+        },
+        {
+          "employee_id": 140,
+          "name": "person_140",
+          "email": "user_140@example.com",
+          "department": "value_140"
+        },
+        {
+          "employee_id": 141,
+          "name": "person_141",
+          "email": "user_141@example.com",
+          "department": "value_141"
+        },
+        {
+          "employee_id": 142,
+          "name": "person_142",
+          "email": "user_142@example.com",
+          "department": "value_142"
+        },
+        {
+          "employee_id": 143,
+          "name": "person_143",
+          "email": "user_143@example.com",
+          "department": "value_143"
+        },
+        {
+          "employee_id": 144,
+          "name": "person_144",
+          "email": "user_144@example.com",
+          "department": "value_144"
+        },
+        {
+          "employee_id": 145,
+          "name": "person_145",
+          "email": "user_145@example.com",
+          "department": "value_145"
+        },
+        {
+          "employee_id": 146,
+          "name": "person_146",
+          "email": "user_146@example.com",
+          "department": "value_146"
+        },
+        {
+          "employee_id": 147,
+          "name": "person_147",
+          "email": "user_147@example.com",
+          "department": "value_147"
+        },
+        {
+          "employee_id": 148,
+          "name": "person_148",
+          "email": "user_148@example.com",
+          "department": "value_148"
+        },
+        {
+          "employee_id": 149,
+          "name": "person_149",
+          "email": "user_149@example.com",
+          "department": "value_149"
+        }
+      ],
+      "expected_issues": [
+        "duplicates"
+      ],
+      "grading_criteria": {
+        "metric": "duplicate_count",
+        "target": 0,
+        "tolerance": 0,
+        "description": "All duplicate rows must be removed"
+      }
+    },
+    {
+      "id": "task_easy_dataset_1",
+      "name": "employees_1.csv",
+      "dirty_data": [
+        {
+          "employee_id": 0,
+          "name": "person_0",
+          "email": "user_0@example.com",
+          "department": "value_0"
+        },
+        {
+          "employee_id": 1,
+          "name": "person_1",
+          "email": "user_1@example.com",
+          "department": "value_1"
+        },
+        {
+          "employee_id": 2,
+          "name": "person_2",
+          "email": "user_2@example.com",
+          "department": "value_2"
+        },
+        {
+          "employee_id": 3,
+          "name": "person_3",
+          "email": "user_3@example.com",
+          "department": "value_3"
+        },
+        {
+          "employee_id": 4,
+          "name": "person_4",
+          "email": "user_4@example.com",
+          "department": "value_4"
+        },
+        {
+          "employee_id": 5,
+          "name": "person_5",
+          "email": "user_5@example.com",
+          "department": "value_5"
+        },
+        {
+          "employee_id": 6,
+          "name": "person_6",
+          "email": "user_6@example.com",
+          "department": "value_6"
+        },
+        {
+          "employee_id": 7,
+          "name": "person_7",
+          "email": "user_7@example.com",
+          "department": "value_7"
+        },
+        {
+          "employee_id": 8,
+          "name": "person_8",
+          "email": "user_8@example.com",
+          "department": "value_8"
+        },
+        {
+          "employee_id": 9,
+          "name": "person_9",
+          "email": "user_9@example.com",
+          "department": "value_9"
+        },
+        {
+          "employee_id": 10,
+          "name": "person_10",
+          "email": "user_10@example.com",
+          "department": "value_10"
+        },
+        {
+          "employee_id": 11,
+          "name": "person_11",
+          "email": "user_11@example.com",
+          "department": "value_11"
+        },
+        {
+          "employee_id": 12,
+          "name": "person_12",
+          "email": "user_12@example.com",
+          "department": "value_12"
+        },
+        {
+          "employee_id": 13,
+          "name": "person_13",
+          "email": "user_13@example.com",
+          "department": "value_13"
+        },
+        {
+          "employee_id": 14,
+          "name": "person_14",
+          "email": "user_14@example.com",
+          "department": "value_14"
+        },
+        {
+          "employee_id": 15,
+          "name": "person_15",
+          "email": "user_15@example.com",
+          "department": "value_15"
+        },
+        {
+          "employee_id": 16,
+          "name": "person_16",
+          "email": "user_16@example.com",
+          "department": "value_16"
+        },
+        {
+          "employee_id": 17,
+          "name": "person_17",
+          "email": "user_17@example.com",
+          "department": "value_17"
+        },
+        {
+          "employee_id": 18,
+          "name": "person_18",
+          "email": "user_18@example.com",
+          "department": "value_18"
+        },
+        {
+          "employee_id": 19,
+          "name": "person_19",
+          "email": "user_19@example.com",
+          "department": "value_19"
+        },
+        {
+          "employee_id": 20,
+          "name": "person_20",
+          "email": "user_20@example.com",
+          "department": "value_20"
+        },
+        {
+          "employee_id": 21,
+          "name": "person_21",
+          "email": "user_21@example.com",
+          "department": "value_21"
+        },
+        {
+          "employee_id": 22,
+          "name": "person_22",
+          "email": "user_22@example.com",
+          "department": "value_22"
+        },
+        {
+          "employee_id": 23,
+          "name": "person_23",
+          "email": "user_23@example.com",
+          "department": "value_23"
+        },
+        {
+          "employee_id": 24,
+          "name": "person_24",
+          "email": "user_24@example.com",
+          "department": "value_24"
+        },
+        {
+          "employee_id": 25,
+          "name": "person_25",
+          "email": "user_25@example.com",
+          "department": "value_25"
+        },
+        {
+          "employee_id": 26,
+          "name": "person_26",
+          "email": "user_26@example.com",
+          "department": "value_26"
+        },
+        {
+          "employee_id": 27,
+          "name": "person_27",
+          "email": "user_27@example.com",
+          "department": "value_27"
+        },
+        {
+          "employee_id": 28,
+          "name": "person_28",
+          "email": "user_28@example.com",
+          "department": "value_28"
+        },
+        {
+          "employee_id": 29,
+          "name": "person_29",
+          "email": "user_29@example.com",
+          "department": "value_29"
+        },
+        {
+          "employee_id": 30,
+          "name": "person_30",
+          "email": "user_30@example.com",
+          "department": "value_30"
+        },
+        {
+          "employee_id": 31,
+          "name": "person_31",
+          "email": "user_31@example.com",
+          "department": "value_31"
+        },
+        {
+          "employee_id": 32,
+          "name": "person_32",
+          "email": "user_32@example.com",
+          "department": "value_32"
+        },
+        {
+          "employee_id": 33,
+          "name": "person_33",
+          "email": "user_33@example.com",
+          "department": "value_33"
+        },
+        {
+          "employee_id": 34,
+          "name": "person_34",
+          "email": "user_34@example.com",
+          "department": "value_34"
+        },
+        {
+          "employee_id": 35,
+          "name": "person_35",
+          "email": "user_35@example.com",
+          "department": "value_35"
+        },
+        {
+          "employee_id": 36,
+          "name": "person_36",
+          "email": "user_36@example.com",
+          "department": "value_36"
+        },
+        {
+          "employee_id": 37,
+          "name": "person_37",
+          "email": "user_37@example.com",
+          "department": "value_37"
+        },
+        {
+          "employee_id": 38,
+          "name": "person_38",
+          "email": "user_38@example.com",
+          "department": "value_38"
+        },
+        {
+          "employee_id": 39,
+          "name": "person_39",
+          "email": "user_39@example.com",
+          "department": "value_39"
+        },
+        {
+          "employee_id": 40,
+          "name": "person_40",
+          "email": "user_40@example.com",
+          "department": "value_40"
+        },
+        {
+          "employee_id": 41,
+          "name": "person_41",
+          "email": "user_41@example.com",
+          "department": "value_41"
+        },
+        {
+          "employee_id": 42,
+          "name": "person_42",
+          "email": "user_42@example.com",
+          "department": "value_42"
+        },
+        {
+          "employee_id": 43,
+          "name": "person_43",
+          "email": "user_43@example.com",
+          "department": "value_43"
+        },
+        {
+          "employee_id": 44,
+          "name": "person_44",
+          "email": "user_44@example.com",
+          "department": "value_44"
+        },
+        {
+          "employee_id": 45,
+          "name": "person_45",
+          "email": "user_45@example.com",
+          "department": "value_45"
+        },
+        {
+          "employee_id": 46,
+          "name": "person_46",
+          "email": "user_46@example.com",
+          "department": "value_46"
+        },
+        {
+          "employee_id": 47,
+          "name": "person_47",
+          "email": "user_47@example.com",
+          "department": "value_47"
+        },
+        {
+          "employee_id": 48,
+          "name": "person_48",
+          "email": "user_48@example.com",
+          "department": "value_48"
+        },
+        {
+          "employee_id": 49,
+          "name": "person_49",
+          "email": "user_49@example.com",
+          "department": "value_49"
+        },
+        {
+          "employee_id": 50,
+          "name": "person_50",
+          "email": "user_50@example.com",
+          "department": "value_50"
+        },
+        {
+          "employee_id": 51,
+          "name": "person_51",
+          "email": "user_51@example.com",
+          "department": "value_51"
+        },
+        {
+          "employee_id": 52,
+          "name": "person_52",
+          "email": "user_52@example.com",
+          "department": "value_52"
+        },
+        {
+          "employee_id": 53,
+          "name": "person_53",
+          "email": "user_53@example.com",
+          "department": "value_53"
+        },
+        {
+          "employee_id": 54,
+          "name": "person_54",
+          "email": "user_54@example.com",
+          "department": "value_54"
+        },
+        {
+          "employee_id": 55,
+          "name": "person_55",
+          "email": "user_55@example.com",
+          "department": "value_55"
+        },
+        {
+          "employee_id": 56,
+          "name": "person_56",
+          "email": "user_56@example.com",
+          "department": "value_56"
+        },
+        {
+          "employee_id": 57,
+          "name": "person_57",
+          "email": "user_57@example.com",
+          "department": "value_57"
+        },
+        {
+          "employee_id": 58,
+          "name": "person_58",
+          "email": "user_58@example.com",
+          "department": "value_58"
+        },
+        {
+          "employee_id": 59,
+          "name": "person_59",
+          "email": "user_59@example.com",
+          "department": "value_59"
+        },
+        {
+          "employee_id": 60,
+          "name": "person_60",
+          "email": "user_60@example.com",
+          "department": "value_60"
+        },
+        {
+          "employee_id": 61,
+          "name": "person_61",
+          "email": "user_61@example.com",
+          "department": "value_61"
+        },
+        {
+          "employee_id": 62,
+          "name": "person_62",
+          "email": "user_62@example.com",
+          "department": "value_62"
+        },
+        {
+          "employee_id": 63,
+          "name": "person_63",
+          "email": "user_63@example.com",
+          "department": "value_63"
+        },
+        {
+          "employee_id": 64,
+          "name": "person_64",
+          "email": "user_64@example.com",
+          "department": "value_64"
+        },
+        {
+          "employee_id": 65,
+          "name": "person_65",
+          "email": "user_65@example.com",
+          "department": "value_65"
+        },
+        {
+          "employee_id": 66,
+          "name": "person_66",
+          "email": "user_66@example.com",
+          "department": "value_66"
+        },
+        {
+          "employee_id": 67,
+          "name": "person_67",
+          "email": "user_67@example.com",
+          "department": "value_67"
+        },
+        {
+          "employee_id": 68,
+          "name": "person_68",
+          "email": "user_68@example.com",
+          "department": "value_68"
+        },
+        {
+          "employee_id": 69,
+          "name": "person_69",
+          "email": "user_69@example.com",
+          "department": "value_69"
+        },
+        {
+          "employee_id": 70,
+          "name": "person_70",
+          "email": "user_70@example.com",
+          "department": "value_70"
+        },
+        {
+          "employee_id": 71,
+          "name": "person_71",
+          "email": "user_71@example.com",
+          "department": "value_71"
+        },
+        {
+          "employee_id": 72,
+          "name": "person_72",
+          "email": "user_72@example.com",
+          "department": "value_72"
+        },
+        {
+          "employee_id": 73,
+          "name": "person_73",
+          "email": "user_73@example.com",
+          "department": "value_73"
+        },
+        {
+          "employee_id": 74,
+          "name": "person_74",
+          "email": "user_74@example.com",
+          "department": "value_74"
+        },
+        {
+          "employee_id": 75,
+          "name": "person_75",
+          "email": "user_75@example.com",
+          "department": "value_75"
+        },
+        {
+          "employee_id": 76,
+          "name": "person_76",
+          "email": "user_76@example.com",
+          "department": "value_76"
+        },
+        {
+          "employee_id": 77,
+          "name": "person_77",
+          "email": "user_77@example.com",
+          "department": "value_77"
+        },
+        {
+          "employee_id": 78,
+          "name": "person_78",
+          "email": "user_78@example.com",
+          "department": "value_78"
+        },
+        {
+          "employee_id": 79,
+          "name": "person_79",
+          "email": "user_79@example.com",
+          "department": "value_79"
+        },
+        {
+          "employee_id": 80,
+          "name": "person_80",
+          "email": "user_80@example.com",
+          "department": "value_80"
+        },
+        {
+          "employee_id": 81,
+          "name": "person_81",
+          "email": "user_81@example.com",
+          "department": "value_81"
+        },
+        {
+          "employee_id": 82,
+          "name": "person_82",
+          "email": "user_82@example.com",
+          "department": "value_82"
+        },
+        {
+          "employee_id": 83,
+          "name": "person_83",
+          "email": "user_83@example.com",
+          "department": "value_83"
+        },
+        {
+          "employee_id": 84,
+          "name": "person_84",
+          "email": "user_84@example.com",
+          "department": "value_84"
+        },
+        {
+          "employee_id": 85,
+          "name": "person_85",
+          "email": "user_85@example.com",
+          "department": "value_85"
+        },
+        {
+          "employee_id": 86,
+          "name": "person_86",
+          "email": "user_86@example.com",
+          "department": "value_86"
+        },
+        {
+          "employee_id": 87,
+          "name": "person_87",
+          "email": "user_87@example.com",
+          "department": "value_87"
+        },
+        {
+          "employee_id": 88,
+          "name": "person_88",
+          "email": "user_88@example.com",
+          "department": "value_88"
+        },
+        {
+          "employee_id": 89,
+          "name": "person_89",
+          "email": "user_89@example.com",
+          "department": "value_89"
+        },
+        {
+          "employee_id": 90,
+          "name": "person_90",
+          "email": "user_90@example.com",
+          "department": "value_90"
+        },
+        {
+          "employee_id": 91,
+          "name": "person_91",
+          "email": "user_91@example.com",
+          "department": "value_91"
+        },
+        {
+          "employee_id": 92,
+          "name": "person_92",
+          "email": "user_92@example.com",
+          "department": "value_92"
+        },
+        {
+          "employee_id": 93,
+          "name": "person_93",
+          "email": "user_93@example.com",
+          "department": "value_93"
+        },
+        {
+          "employee_id": 94,
+          "name": "person_94",
+          "email": "user_94@example.com",
+          "department": "value_94"
+        },
+        {
+          "employee_id": 95,
+          "name": "person_95",
+          "email": "user_95@example.com",
+          "department": "value_95"
+        },
+        {
+          "employee_id": 96,
+          "name": "person_96",
+          "email": "user_96@example.com",
+          "department": "value_96"
+        },
+        {
+          "employee_id": 97,
+          "name": "person_97",
+          "email": "user_97@example.com",
+          "department": "value_97"
+        },
+        {
+          "employee_id": 98,
+          "name": "person_98",
+          "email": "user_98@example.com",
+          "department": "value_98"
+        },
+        {
+          "employee_id": 99,
+          "name": "person_99",
+          "email": "user_99@example.com",
+          "department": "value_99"
+        },
+        {
+          "employee_id": 100,
+          "name": "person_100",
+          "email": "user_100@example.com",
+          "department": "value_100"
+        },
+        {
+          "employee_id": 101,
+          "name": "person_101",
+          "email": "user_101@example.com",
+          "department": "value_101"
+        },
+        {
+          "employee_id": 102,
+          "name": "person_102",
+          "email": "user_102@example.com",
+          "department": "value_102"
+        },
+        {
+          "employee_id": 103,
+          "name": "person_103",
+          "email": "user_103@example.com",
+          "department": "value_103"
+        },
+        {
+          "employee_id": 104,
+          "name": "person_104",
+          "email": "user_104@example.com",
+          "department": "value_104"
+        },
+        {
+          "employee_id": 105,
+          "name": "person_105",
+          "email": "user_105@example.com",
+          "department": "value_105"
+        },
+        {
+          "employee_id": 106,
+          "name": "person_106",
+          "email": "user_106@example.com",
+          "department": "value_106"
+        },
+        {
+          "employee_id": 107,
+          "name": "person_107",
+          "email": "user_107@example.com",
+          "department": "value_107"
+        },
+        {
+          "employee_id": 108,
+          "name": "person_108",
+          "email": "user_108@example.com",
+          "department": "value_108"
+        },
+        {
+          "employee_id": 109,
+          "name": "person_109",
+          "email": "user_109@example.com",
+          "department": "value_109"
+        },
+        {
+          "employee_id": 110,
+          "name": "person_110",
+          "email": "user_110@example.com",
+          "department": "value_110"
+        },
+        {
+          "employee_id": 111,
+          "name": "person_111",
+          "email": "user_111@example.com",
+          "department": "value_111"
+        },
+        {
+          "employee_id": 112,
+          "name": "person_112",
+          "email": "user_112@example.com",
+          "department": "value_112"
+        },
+        {
+          "employee_id": 113,
+          "name": "person_113",
+          "email": "user_113@example.com",
+          "department": "value_113"
+        },
+        {
+          "employee_id": 114,
+          "name": "person_114",
+          "email": "user_114@example.com",
+          "department": "value_114"
+        },
+        {
+          "employee_id": 115,
+          "name": "person_115",
+          "email": "user_115@example.com",
+          "department": "value_115"
+        },
+        {
+          "employee_id": 116,
+          "name": "person_116",
+          "email": "user_116@example.com",
+          "department": "value_116"
+        },
+        {
+          "employee_id": 117,
+          "name": "person_117",
+          "email": "user_117@example.com",
+          "department": "value_117"
+        },
+        {
+          "employee_id": 118,
+          "name": "person_118",
+          "email": "user_118@example.com",
+          "department": "value_118"
+        },
+        {
+          "employee_id": 119,
+          "name": "person_119",
+          "email": "user_119@example.com",
+          "department": "value_119"
+        },
+        {
+          "employee_id": 120,
+          "name": "person_120",
+          "email": "user_120@example.com",
+          "department": "value_120"
+        },
+        {
+          "employee_id": 121,
+          "name": "person_121",
+          "email": "user_121@example.com",
+          "department": "value_121"
+        },
+        {
+          "employee_id": 122,
+          "name": "person_122",
+          "email": "user_122@example.com",
+          "department": "value_122"
+        },
+        {
+          "employee_id": 123,
+          "name": "person_123",
+          "email": "user_123@example.com",
+          "department": "value_123"
+        },
+        {
+          "employee_id": 124,
+          "name": "person_124",
+          "email": "user_124@example.com",
+          "department": "value_124"
+        },
+        {
+          "employee_id": 125,
+          "name": "person_125",
+          "email": "user_125@example.com",
+          "department": "value_125"
+        },
+        {
+          "employee_id": 126,
+          "name": "person_126",
+          "email": "user_126@example.com",
+          "department": "value_126"
+        },
+        {
+          "employee_id": 127,
+          "name": "person_127",
+          "email": "user_127@example.com",
+          "department": "value_127"
+        },
+        {
+          "employee_id": 128,
+          "name": "person_128",
+          "email": "user_128@example.com",
+          "department": "value_128"
+        },
+        {
+          "employee_id": 129,
+          "name": "person_129",
+          "email": "user_129@example.com",
+          "department": "value_129"
+        },
+        {
+          "employee_id": 130,
+          "name": "person_130",
+          "email": "user_130@example.com",
+          "department": "value_130"
+        },
+        {
+          "employee_id": 131,
+          "name": "person_131",
+          "email": "user_131@example.com",
+          "department": "value_131"
+        },
+        {
+          "employee_id": 132,
+          "name": "person_132",
+          "email": "user_132@example.com",
+          "department": "value_132"
+        },
+        {
+          "employee_id": 133,
+          "name": "person_133",
+          "email": "user_133@example.com",
+          "department": "value_133"
+        },
+        {
+          "employee_id": 134,
+          "name": "person_134",
+          "email": "user_134@example.com",
+          "department": "value_134"
+        },
+        {
+          "employee_id": 135,
+          "name": "person_135",
+          "email": "user_135@example.com",
+          "department": "value_135"
+        },
+        {
+          "employee_id": 136,
+          "name": "person_136",
+          "email": "user_136@example.com",
+          "department": "value_136"
+        },
+        {
+          "employee_id": 137,
+          "name": "person_137",
+          "email": "user_137@example.com",
+          "department": "value_137"
+        },
+        {
+          "employee_id": 138,
+          "name": "person_138",
+          "email": "user_138@example.com",
+          "department": "value_138"
+        },
+        {
+          "employee_id": 139,
+          "name": "person_139",
+          "email": "user_139@example.com",
+          "department": "value_139"
+        },
+        {
+          "employee_id": 140,
+          "name": "person_140",
+          "email": "user_140@example.com",
+          "department": "value_140"
+        },
+        {
+          "employee_id": 141,
+          "name": "person_141",
+          "email": "user_141@example.com",
+          "department": "value_141"
+        },
+        {
+          "employee_id": 142,
+          "name": "person_142",
+          "email": "user_142@example.com",
+          "department": "value_142"
+        },
+        {
+          "employee_id": 143,
+          "name": "person_143",
+          "email": "user_143@example.com",
+          "department": "value_143"
+        },
+        {
+          "employee_id": 144,
+          "name": "person_144",
+          "email": "user_144@example.com",
+          "department": "value_144"
+        },
+        {
+          "employee_id": 145,
+          "name": "person_145",
+          "email": "user_145@example.com",
+          "department": "value_145"
+        },
+        {
+          "employee_id": 146,
+          "name": "person_146",
+          "email": "user_146@example.com",
+          "department": "value_146"
+        },
+        {
+          "employee_id": 147,
+          "name": "person_147",
+          "email": "user_147@example.com",
+          "department": "value_147"
+        },
+        {
+          "employee_id": 148,
+          "name": "person_148",
+          "email": "user_148@example.com",
+          "department": "value_148"
+        },
+        {
+          "employee_id": 149,
+          "name": "person_149",
+          "email": "user_149@example.com",
+          "department": "value_149"
+        },
+        {
+          "employee_id": 22,
+          "name": "person_22",
+          "email": "user_22@example.com",
+          "department": "value_22"
+        },
+        {
+          "employee_id": 108,
+          "name": "person_108",
+          "email": "user_108@example.com",
+          "department": "value_108"
+        },
+        {
+          "employee_id": 8,
+          "name": "person_8",
+          "email": "user_8@example.com",
+          "department": "value_8"
+        },
+        {
+          "employee_id": 7,
+          "name": "person_7",
+          "email": "user_7@example.com",
+          "department": "value_7"
+        },
+        {
+          "employee_id": 23,
+          "name": "person_23",
+          "email": "user_23@example.com",
+          "department": "value_23"
+        },
+        {
+          "employee_id": 55,
+          "name": "person_55",
+          "email": "user_55@example.com",
+          "department": "value_55"
+        },
+        {
+          "employee_id": 59,
+          "name": "person_59",
+          "email": "user_59@example.com",
+          "department": "value_59"
+        },
+        {
+          "employee_id": 129,
+          "name": "person_129",
+          "email": "user_129@example.com",
+          "department": "value_129"
+        }
+      ],
+      "clean_data": [
+        {
+          "employee_id": 0,
+          "name": "person_0",
+          "email": "user_0@example.com",
+          "department": "value_0"
+        },
+        {
+          "employee_id": 1,
+          "name": "person_1",
+          "email": "user_1@example.com",
+          "department": "value_1"
+        },
+        {
+          "employee_id": 2,
+          "name": "person_2",
+          "email": "user_2@example.com",
+          "department": "value_2"
+        },
+        {
+          "employee_id": 3,
+          "name": "person_3",
+          "email": "user_3@example.com",
+          "department": "value_3"
+        },
+        {
+          "employee_id": 4,
+          "name": "person_4",
+          "email": "user_4@example.com",
+          "department": "value_4"
+        },
+        {
+          "employee_id": 5,
+          "name": "person_5",
+          "email": "user_5@example.com",
+          "department": "value_5"
+        },
+        {
+          "employee_id": 6,
+          "name": "person_6",
+          "email": "user_6@example.com",
+          "department": "value_6"
+        },
+        {
+          "employee_id": 7,
+          "name": "person_7",
+          "email": "user_7@example.com",
+          "department": "value_7"
+        },
+        {
+          "employee_id": 8,
+          "name": "person_8",
+          "email": "user_8@example.com",
+          "department": "value_8"
+        },
+        {
+          "employee_id": 9,
+          "name": "person_9",
+          "email": "user_9@example.com",
+          "department": "value_9"
+        },
+        {
+          "employee_id": 10,
+          "name": "person_10",
+          "email": "user_10@example.com",
+          "department": "value_10"
+        },
+        {
+          "employee_id": 11,
+          "name": "person_11",
+          "email": "user_11@example.com",
+          "department": "value_11"
+        },
+        {
+          "employee_id": 12,
+          "name": "person_12",
+          "email": "user_12@example.com",
+          "department": "value_12"
+        },
+        {
+          "employee_id": 13,
+          "name": "person_13",
+          "email": "user_13@example.com",
+          "department": "value_13"
+        },
+        {
+          "employee_id": 14,
+          "name": "person_14",
+          "email": "user_14@example.com",
+          "department": "value_14"
+        },
+        {
+          "employee_id": 15,
+          "name": "person_15",
+          "email": "user_15@example.com",
+          "department": "value_15"
+        },
+        {
+          "employee_id": 16,
+          "name": "person_16",
+          "email": "user_16@example.com",
+          "department": "value_16"
+        },
+        {
+          "employee_id": 17,
+          "name": "person_17",
+          "email": "user_17@example.com",
+          "department": "value_17"
+        },
+        {
+          "employee_id": 18,
+          "name": "person_18",
+          "email": "user_18@example.com",
+          "department": "value_18"
+        },
+        {
+          "employee_id": 19,
+          "name": "person_19",
+          "email": "user_19@example.com",
+          "department": "value_19"
+        },
+        {
+          "employee_id": 20,
+          "name": "person_20",
+          "email": "user_20@example.com",
+          "department": "value_20"
+        },
+        {
+          "employee_id": 21,
+          "name": "person_21",
+          "email": "user_21@example.com",
+          "department": "value_21"
+        },
+        {
+          "employee_id": 22,
+          "name": "person_22",
+          "email": "user_22@example.com",
+          "department": "value_22"
+        },
+        {
+          "employee_id": 23,
+          "name": "person_23",
+          "email": "user_23@example.com",
+          "department": "value_23"
+        },
+        {
+          "employee_id": 24,
+          "name": "person_24",
+          "email": "user_24@example.com",
+          "department": "value_24"
+        },
+        {
+          "employee_id": 25,
+          "name": "person_25",
+          "email": "user_25@example.com",
+          "department": "value_25"
+        },
+        {
+          "employee_id": 26,
+          "name": "person_26",
+          "email": "user_26@example.com",
+          "department": "value_26"
+        },
+        {
+          "employee_id": 27,
+          "name": "person_27",
+          "email": "user_27@example.com",
+          "department": "value_27"
+        },
+        {
+          "employee_id": 28,
+          "name": "person_28",
+          "email": "user_28@example.com",
+          "department": "value_28"
+        },
+        {
+          "employee_id": 29,
+          "name": "person_29",
+          "email": "user_29@example.com",
+          "department": "value_29"
+        },
+        {
+          "employee_id": 30,
+          "name": "person_30",
+          "email": "user_30@example.com",
+          "department": "value_30"
+        },
+        {
+          "employee_id": 31,
+          "name": "person_31",
+          "email": "user_31@example.com",
+          "department": "value_31"
+        },
+        {
+          "employee_id": 32,
+          "name": "person_32",
+          "email": "user_32@example.com",
+          "department": "value_32"
+        },
+        {
+          "employee_id": 33,
+          "name": "person_33",
+          "email": "user_33@example.com",
+          "department": "value_33"
+        },
+        {
+          "employee_id": 34,
+          "name": "person_34",
+          "email": "user_34@example.com",
+          "department": "value_34"
+        },
+        {
+          "employee_id": 35,
+          "name": "person_35",
+          "email": "user_35@example.com",
+          "department": "value_35"
+        },
+        {
+          "employee_id": 36,
+          "name": "person_36",
+          "email": "user_36@example.com",
+          "department": "value_36"
+        },
+        {
+          "employee_id": 37,
+          "name": "person_37",
+          "email": "user_37@example.com",
+          "department": "value_37"
+        },
+        {
+          "employee_id": 38,
+          "name": "person_38",
+          "email": "user_38@example.com",
+          "department": "value_38"
+        },
+        {
+          "employee_id": 39,
+          "name": "person_39",
+          "email": "user_39@example.com",
+          "department": "value_39"
+        },
+        {
+          "employee_id": 40,
+          "name": "person_40",
+          "email": "user_40@example.com",
+          "department": "value_40"
+        },
+        {
+          "employee_id": 41,
+          "name": "person_41",
+          "email": "user_41@example.com",
+          "department": "value_41"
+        },
+        {
+          "employee_id": 42,
+          "name": "person_42",
+          "email": "user_42@example.com",
+          "department": "value_42"
+        },
+        {
+          "employee_id": 43,
+          "name": "person_43",
+          "email": "user_43@example.com",
+          "department": "value_43"
+        },
+        {
+          "employee_id": 44,
+          "name": "person_44",
+          "email": "user_44@example.com",
+          "department": "value_44"
+        },
+        {
+          "employee_id": 45,
+          "name": "person_45",
+          "email": "user_45@example.com",
+          "department": "value_45"
+        },
+        {
+          "employee_id": 46,
+          "name": "person_46",
+          "email": "user_46@example.com",
+          "department": "value_46"
+        },
+        {
+          "employee_id": 47,
+          "name": "person_47",
+          "email": "user_47@example.com",
+          "department": "value_47"
+        },
+        {
+          "employee_id": 48,
+          "name": "person_48",
+          "email": "user_48@example.com",
+          "department": "value_48"
+        },
+        {
+          "employee_id": 49,
+          "name": "person_49",
+          "email": "user_49@example.com",
+          "department": "value_49"
+        },
+        {
+          "employee_id": 50,
+          "name": "person_50",
+          "email": "user_50@example.com",
+          "department": "value_50"
+        },
+        {
+          "employee_id": 51,
+          "name": "person_51",
+          "email": "user_51@example.com",
+          "department": "value_51"
+        },
+        {
+          "employee_id": 52,
+          "name": "person_52",
+          "email": "user_52@example.com",
+          "department": "value_52"
+        },
+        {
+          "employee_id": 53,
+          "name": "person_53",
+          "email": "user_53@example.com",
+          "department": "value_53"
+        },
+        {
+          "employee_id": 54,
+          "name": "person_54",
+          "email": "user_54@example.com",
+          "department": "value_54"
+        },
+        {
+          "employee_id": 55,
+          "name": "person_55",
+          "email": "user_55@example.com",
+          "department": "value_55"
+        },
+        {
+          "employee_id": 56,
+          "name": "person_56",
+          "email": "user_56@example.com",
+          "department": "value_56"
+        },
+        {
+          "employee_id": 57,
+          "name": "person_57",
+          "email": "user_57@example.com",
+          "department": "value_57"
+        },
+        {
+          "employee_id": 58,
+          "name": "person_58",
+          "email": "user_58@example.com",
+          "department": "value_58"
+        },
+        {
+          "employee_id": 59,
+          "name": "person_59",
+          "email": "user_59@example.com",
+          "department": "value_59"
+        },
+        {
+          "employee_id": 60,
+          "name": "person_60",
+          "email": "user_60@example.com",
+          "department": "value_60"
+        },
+        {
+          "employee_id": 61,
+          "name": "person_61",
+          "email": "user_61@example.com",
+          "department": "value_61"
+        },
+        {
+          "employee_id": 62,
+          "name": "person_62",
+          "email": "user_62@example.com",
+          "department": "value_62"
+        },
+        {
+          "employee_id": 63,
+          "name": "person_63",
+          "email": "user_63@example.com",
+          "department": "value_63"
+        },
+        {
+          "employee_id": 64,
+          "name": "person_64",
+          "email": "user_64@example.com",
+          "department": "value_64"
+        },
+        {
+          "employee_id": 65,
+          "name": "person_65",
+          "email": "user_65@example.com",
+          "department": "value_65"
+        },
+        {
+          "employee_id": 66,
+          "name": "person_66",
+          "email": "user_66@example.com",
+          "department": "value_66"
+        },
+        {
+          "employee_id": 67,
+          "name": "person_67",
+          "email": "user_67@example.com",
+          "department": "value_67"
+        },
+        {
+          "employee_id": 68,
+          "name": "person_68",
+          "email": "user_68@example.com",
+          "department": "value_68"
+        },
+        {
+          "employee_id": 69,
+          "name": "person_69",
+          "email": "user_69@example.com",
+          "department": "value_69"
+        },
+        {
+          "employee_id": 70,
+          "name": "person_70",
+          "email": "user_70@example.com",
+          "department": "value_70"
+        },
+        {
+          "employee_id": 71,
+          "name": "person_71",
+          "email": "user_71@example.com",
+          "department": "value_71"
+        },
+        {
+          "employee_id": 72,
+          "name": "person_72",
+          "email": "user_72@example.com",
+          "department": "value_72"
+        },
+        {
+          "employee_id": 73,
+          "name": "person_73",
+          "email": "user_73@example.com",
+          "department": "value_73"
+        },
+        {
+          "employee_id": 74,
+          "name": "person_74",
+          "email": "user_74@example.com",
+          "department": "value_74"
+        },
+        {
+          "employee_id": 75,
+          "name": "person_75",
+          "email": "user_75@example.com",
+          "department": "value_75"
+        },
+        {
+          "employee_id": 76,
+          "name": "person_76",
+          "email": "user_76@example.com",
+          "department": "value_76"
+        },
+        {
+          "employee_id": 77,
+          "name": "person_77",
+          "email": "user_77@example.com",
+          "department": "value_77"
+        },
+        {
+          "employee_id": 78,
+          "name": "person_78",
+          "email": "user_78@example.com",
+          "department": "value_78"
+        },
+        {
+          "employee_id": 79,
+          "name": "person_79",
+          "email": "user_79@example.com",
+          "department": "value_79"
+        },
+        {
+          "employee_id": 80,
+          "name": "person_80",
+          "email": "user_80@example.com",
+          "department": "value_80"
+        },
+        {
+          "employee_id": 81,
+          "name": "person_81",
+          "email": "user_81@example.com",
+          "department": "value_81"
+        },
+        {
+          "employee_id": 82,
+          "name": "person_82",
+          "email": "user_82@example.com",
+          "department": "value_82"
+        },
+        {
+          "employee_id": 83,
+          "name": "person_83",
+          "email": "user_83@example.com",
+          "department": "value_83"
+        },
+        {
+          "employee_id": 84,
+          "name": "person_84",
+          "email": "user_84@example.com",
+          "department": "value_84"
+        },
+        {
+          "employee_id": 85,
+          "name": "person_85",
+          "email": "user_85@example.com",
+          "department": "value_85"
+        },
+        {
+          "employee_id": 86,
+          "name": "person_86",
+          "email": "user_86@example.com",
+          "department": "value_86"
+        },
+        {
+          "employee_id": 87,
+          "name": "person_87",
+          "email": "user_87@example.com",
+          "department": "value_87"
+        },
+        {
+          "employee_id": 88,
+          "name": "person_88",
+          "email": "user_88@example.com",
+          "department": "value_88"
+        },
+        {
+          "employee_id": 89,
+          "name": "person_89",
+          "email": "user_89@example.com",
+          "department": "value_89"
+        },
+        {
+          "employee_id": 90,
+          "name": "person_90",
+          "email": "user_90@example.com",
+          "department": "value_90"
+        },
+        {
+          "employee_id": 91,
+          "name": "person_91",
+          "email": "user_91@example.com",
+          "department": "value_91"
+        },
+        {
+          "employee_id": 92,
+          "name": "person_92",
+          "email": "user_92@example.com",
+          "department": "value_92"
+        },
+        {
+          "employee_id": 93,
+          "name": "person_93",
+          "email": "user_93@example.com",
+          "department": "value_93"
+        },
+        {
+          "employee_id": 94,
+          "name": "person_94",
+          "email": "user_94@example.com",
+          "department": "value_94"
+        },
+        {
+          "employee_id": 95,
+          "name": "person_95",
+          "email": "user_95@example.com",
+          "department": "value_95"
+        },
+        {
+          "employee_id": 96,
+          "name": "person_96",
+          "email": "user_96@example.com",
+          "department": "value_96"
+        },
+        {
+          "employee_id": 97,
+          "name": "person_97",
+          "email": "user_97@example.com",
+          "department": "value_97"
+        },
+        {
+          "employee_id": 98,
+          "name": "person_98",
+          "email": "user_98@example.com",
+          "department": "value_98"
+        },
+        {
+          "employee_id": 99,
+          "name": "person_99",
+          "email": "user_99@example.com",
+          "department": "value_99"
+        },
+        {
+          "employee_id": 100,
+          "name": "person_100",
+          "email": "user_100@example.com",
+          "department": "value_100"
+        },
+        {
+          "employee_id": 101,
+          "name": "person_101",
+          "email": "user_101@example.com",
+          "department": "value_101"
+        },
+        {
+          "employee_id": 102,
+          "name": "person_102",
+          "email": "user_102@example.com",
+          "department": "value_102"
+        },
+        {
+          "employee_id": 103,
+          "name": "person_103",
+          "email": "user_103@example.com",
+          "department": "value_103"
+        },
+        {
+          "employee_id": 104,
+          "name": "person_104",
+          "email": "user_104@example.com",
+          "department": "value_104"
+        },
+        {
+          "employee_id": 105,
+          "name": "person_105",
+          "email": "user_105@example.com",
+          "department": "value_105"
+        },
+        {
+          "employee_id": 106,
+          "name": "person_106",
+          "email": "user_106@example.com",
+          "department": "value_106"
+        },
+        {
+          "employee_id": 107,
+          "name": "person_107",
+          "email": "user_107@example.com",
+          "department": "value_107"
+        },
+        {
+          "employee_id": 108,
+          "name": "person_108",
+          "email": "user_108@example.com",
+          "department": "value_108"
+        },
+        {
+          "employee_id": 109,
+          "name": "person_109",
+          "email": "user_109@example.com",
+          "department": "value_109"
+        },
+        {
+          "employee_id": 110,
+          "name": "person_110",
+          "email": "user_110@example.com",
+          "department": "value_110"
+        },
+        {
+          "employee_id": 111,
+          "name": "person_111",
+          "email": "user_111@example.com",
+          "department": "value_111"
+        },
+        {
+          "employee_id": 112,
+          "name": "person_112",
+          "email": "user_112@example.com",
+          "department": "value_112"
+        },
+        {
+          "employee_id": 113,
+          "name": "person_113",
+          "email": "user_113@example.com",
+          "department": "value_113"
+        },
+        {
+          "employee_id": 114,
+          "name": "person_114",
+          "email": "user_114@example.com",
+          "department": "value_114"
+        },
+        {
+          "employee_id": 115,
+          "name": "person_115",
+          "email": "user_115@example.com",
+          "department": "value_115"
+        },
+        {
+          "employee_id": 116,
+          "name": "person_116",
+          "email": "user_116@example.com",
+          "department": "value_116"
+        },
+        {
+          "employee_id": 117,
+          "name": "person_117",
+          "email": "user_117@example.com",
+          "department": "value_117"
+        },
+        {
+          "employee_id": 118,
+          "name": "person_118",
+          "email": "user_118@example.com",
+          "department": "value_118"
+        },
+        {
+          "employee_id": 119,
+          "name": "person_119",
+          "email": "user_119@example.com",
+          "department": "value_119"
+        },
+        {
+          "employee_id": 120,
+          "name": "person_120",
+          "email": "user_120@example.com",
+          "department": "value_120"
+        },
+        {
+          "employee_id": 121,
+          "name": "person_121",
+          "email": "user_121@example.com",
+          "department": "value_121"
+        },
+        {
+          "employee_id": 122,
+          "name": "person_122",
+          "email": "user_122@example.com",
+          "department": "value_122"
+        },
+        {
+          "employee_id": 123,
+          "name": "person_123",
+          "email": "user_123@example.com",
+          "department": "value_123"
+        },
+        {
+          "employee_id": 124,
+          "name": "person_124",
+          "email": "user_124@example.com",
+          "department": "value_124"
+        },
+        {
+          "employee_id": 125,
+          "name": "person_125",
+          "email": "user_125@example.com",
+          "department": "value_125"
+        },
+        {
+          "employee_id": 126,
+          "name": "person_126",
+          "email": "user_126@example.com",
+          "department": "value_126"
+        },
+        {
+          "employee_id": 127,
+          "name": "person_127",
+          "email": "user_127@example.com",
+          "department": "value_127"
+        },
+        {
+          "employee_id": 128,
+          "name": "person_128",
+          "email": "user_128@example.com",
+          "department": "value_128"
+        },
+        {
+          "employee_id": 129,
+          "name": "person_129",
+          "email": "user_129@example.com",
+          "department": "value_129"
+        },
+        {
+          "employee_id": 130,
+          "name": "person_130",
+          "email": "user_130@example.com",
+          "department": "value_130"
+        },
+        {
+          "employee_id": 131,
+          "name": "person_131",
+          "email": "user_131@example.com",
+          "department": "value_131"
+        },
+        {
+          "employee_id": 132,
+          "name": "person_132",
+          "email": "user_132@example.com",
+          "department": "value_132"
+        },
+        {
+          "employee_id": 133,
+          "name": "person_133",
+          "email": "user_133@example.com",
+          "department": "value_133"
+        },
+        {
+          "employee_id": 134,
+          "name": "person_134",
+          "email": "user_134@example.com",
+          "department": "value_134"
+        },
+        {
+          "employee_id": 135,
+          "name": "person_135",
+          "email": "user_135@example.com",
+          "department": "value_135"
+        },
+        {
+          "employee_id": 136,
+          "name": "person_136",
+          "email": "user_136@example.com",
+          "department": "value_136"
+        },
+        {
+          "employee_id": 137,
+          "name": "person_137",
+          "email": "user_137@example.com",
+          "department": "value_137"
+        },
+        {
+          "employee_id": 138,
+          "name": "person_138",
+          "email": "user_138@example.com",
+          "department": "value_138"
+        },
+        {
+          "employee_id": 139,
+          "name": "person_139",
+          "email": "user_139@example.com",
+          "department": "value_139"
+        },
+        {
+          "employee_id": 140,
+          "name": "person_140",
+          "email": "user_140@example.com",
+          "department": "value_140"
+        },
+        {
+          "employee_id": 141,
+          "name": "person_141",
+          "email": "user_141@example.com",
+          "department": "value_141"
+        },
+        {
+          "employee_id": 142,
+          "name": "person_142",
+          "email": "user_142@example.com",
+          "department": "value_142"
+        },
+        {
+          "employee_id": 143,
+          "name": "person_143",
+          "email": "user_143@example.com",
+          "department": "value_143"
+        },
+        {
+          "employee_id": 144,
+          "name": "person_144",
+          "email": "user_144@example.com",
+          "department": "value_144"
+        },
+        {
+          "employee_id": 145,
+          "name": "person_145",
+          "email": "user_145@example.com",
+          "department": "value_145"
+        },
+        {
+          "employee_id": 146,
+          "name": "person_146",
+          "email": "user_146@example.com",
+          "department": "value_146"
+        },
+        {
+          "employee_id": 147,
+          "name": "person_147",
+          "email": "user_147@example.com",
+          "department": "value_147"
+        },
+        {
+          "employee_id": 148,
+          "name": "person_148",
+          "email": "user_148@example.com",
+          "department": "value_148"
+        },
+        {
+          "employee_id": 149,
+          "name": "person_149",
+          "email": "user_149@example.com",
+          "department": "value_149"
+        }
+      ],
+      "expected_issues": [
+        "duplicates"
+      ],
+      "grading_criteria": {
+        "metric": "duplicate_count",
+        "target": 0,
+        "tolerance": 0,
+        "description": "All duplicate rows must be removed"
+      }
+    },
+    {
+      "id": "task_easy_dataset_2",
+      "name": "employees_2.csv",
+      "dirty_data": [
+        {
+          "employee_id": 0,
+          "name": "person_0",
+          "email": "user_0@example.com",
+          "department": "value_0"
+        },
+        {
+          "employee_id": 1,
+          "name": "person_1",
+          "email": "user_1@example.com",
+          "department": "value_1"
+        },
+        {
+          "employee_id": 2,
+          "name": "person_2",
+          "email": "user_2@example.com",
+          "department": "value_2"
+        },
+        {
+          "employee_id": 3,
+          "name": "person_3",
+          "email": "user_3@example.com",
+          "department": "value_3"
+        },
+        {
+          "employee_id": 4,
+          "name": "person_4",
+          "email": "user_4@example.com",
+          "department": "value_4"
+        },
+        {
+          "employee_id": 5,
+          "name": "person_5",
+          "email": "user_5@example.com",
+          "department": "value_5"
+        },
+        {
+          "employee_id": 6,
+          "name": "person_6",
+          "email": "user_6@example.com",
+          "department": "value_6"
+        },
+        {
+          "employee_id": 7,
+          "name": "person_7",
+          "email": "user_7@example.com",
+          "department": "value_7"
+        },
+        {
+          "employee_id": 8,
+          "name": "person_8",
+          "email": "user_8@example.com",
+          "department": "value_8"
+        },
+        {
+          "employee_id": 9,
+          "name": "person_9",
+          "email": "user_9@example.com",
+          "department": "value_9"
+        },
+        {
+          "employee_id": 10,
+          "name": "person_10",
+          "email": "user_10@example.com",
+          "department": "value_10"
+        },
+        {
+          "employee_id": 11,
+          "name": "person_11",
+          "email": "user_11@example.com",
+          "department": "value_11"
+        },
+        {
+          "employee_id": 12,
+          "name": "person_12",
+          "email": "user_12@example.com",
+          "department": "value_12"
+        },
+        {
+          "employee_id": 13,
+          "name": "person_13",
+          "email": "user_13@example.com",
+          "department": "value_13"
+        },
+        {
+          "employee_id": 14,
+          "name": "person_14",
+          "email": "user_14@example.com",
+          "department": "value_14"
+        },
+        {
+          "employee_id": 15,
+          "name": "person_15",
+          "email": "user_15@example.com",
+          "department": "value_15"
+        },
+        {
+          "employee_id": 16,
+          "name": "person_16",
+          "email": "user_16@example.com",
+          "department": "value_16"
+        },
+        {
+          "employee_id": 17,
+          "name": "person_17",
+          "email": "user_17@example.com",
+          "department": "value_17"
+        },
+        {
+          "employee_id": 18,
+          "name": "person_18",
+          "email": "user_18@example.com",
+          "department": "value_18"
+        },
+        {
+          "employee_id": 19,
+          "name": "person_19",
+          "email": "user_19@example.com",
+          "department": "value_19"
+        },
+        {
+          "employee_id": 20,
+          "name": "person_20",
+          "email": "user_20@example.com",
+          "department": "value_20"
+        },
+        {
+          "employee_id": 21,
+          "name": "person_21",
+          "email": "user_21@example.com",
+          "department": "value_21"
+        },
+        {
+          "employee_id": 22,
+          "name": "person_22",
+          "email": "user_22@example.com",
+          "department": "value_22"
+        },
+        {
+          "employee_id": 23,
+          "name": "person_23",
+          "email": "user_23@example.com",
+          "department": "value_23"
+        },
+        {
+          "employee_id": 24,
+          "name": "person_24",
+          "email": "user_24@example.com",
+          "department": "value_24"
+        },
+        {
+          "employee_id": 25,
+          "name": "person_25",
+          "email": "user_25@example.com",
+          "department": "value_25"
+        },
+        {
+          "employee_id": 26,
+          "name": "person_26",
+          "email": "user_26@example.com",
+          "department": "value_26"
+        },
+        {
+          "employee_id": 27,
+          "name": "person_27",
+          "email": "user_27@example.com",
+          "department": "value_27"
+        },
+        {
+          "employee_id": 28,
+          "name": "person_28",
+          "email": "user_28@example.com",
+          "department": "value_28"
+        },
+        {
+          "employee_id": 29,
+          "name": "person_29",
+          "email": "user_29@example.com",
+          "department": "value_29"
+        },
+        {
+          "employee_id": 30,
+          "name": "person_30",
+          "email": "user_30@example.com",
+          "department": "value_30"
+        },
+        {
+          "employee_id": 31,
+          "name": "person_31",
+          "email": "user_31@example.com",
+          "department": "value_31"
+        },
+        {
+          "employee_id": 32,
+          "name": "person_32",
+          "email": "user_32@example.com",
+          "department": "value_32"
+        },
+        {
+          "employee_id": 33,
+          "name": "person_33",
+          "email": "user_33@example.com",
+          "department": "value_33"
+        },
+        {
+          "employee_id": 34,
+          "name": "person_34",
+          "email": "user_34@example.com",
+          "department": "value_34"
+        },
+        {
+          "employee_id": 35,
+          "name": "person_35",
+          "email": "user_35@example.com",
+          "department": "value_35"
+        },
+        {
+          "employee_id": 36,
+          "name": "person_36",
+          "email": "user_36@example.com",
+          "department": "value_36"
+        },
+        {
+          "employee_id": 37,
+          "name": "person_37",
+          "email": "user_37@example.com",
+          "department": "value_37"
+        },
+        {
+          "employee_id": 38,
+          "name": "person_38",
+          "email": "user_38@example.com",
+          "department": "value_38"
+        },
+        {
+          "employee_id": 39,
+          "name": "person_39",
+          "email": "user_39@example.com",
+          "department": "value_39"
+        },
+        {
+          "employee_id": 40,
+          "name": "person_40",
+          "email": "user_40@example.com",
+          "department": "value_40"
+        },
+        {
+          "employee_id": 41,
+          "name": "person_41",
+          "email": "user_41@example.com",
+          "department": "value_41"
+        },
+        {
+          "employee_id": 42,
+          "name": "person_42",
+          "email": "user_42@example.com",
+          "department": "value_42"
+        },
+        {
+          "employee_id": 43,
+          "name": "person_43",
+          "email": "user_43@example.com",
+          "department": "value_43"
+        },
+        {
+          "employee_id": 44,
+          "name": "person_44",
+          "email": "user_44@example.com",
+          "department": "value_44"
+        },
+        {
+          "employee_id": 45,
+          "name": "person_45",
+          "email": "user_45@example.com",
+          "department": "value_45"
+        },
+        {
+          "employee_id": 46,
+          "name": "person_46",
+          "email": "user_46@example.com",
+          "department": "value_46"
+        },
+        {
+          "employee_id": 47,
+          "name": "person_47",
+          "email": "user_47@example.com",
+          "department": "value_47"
+        },
+        {
+          "employee_id": 48,
+          "name": "person_48",
+          "email": "user_48@example.com",
+          "department": "value_48"
+        },
+        {
+          "employee_id": 49,
+          "name": "person_49",
+          "email": "user_49@example.com",
+          "department": "value_49"
+        },
+        {
+          "employee_id": 50,
+          "name": "person_50",
+          "email": "user_50@example.com",
+          "department": "value_50"
+        },
+        {
+          "employee_id": 51,
+          "name": "person_51",
+          "email": "user_51@example.com",
+          "department": "value_51"
+        },
+        {
+          "employee_id": 52,
+          "name": "person_52",
+          "email": "user_52@example.com",
+          "department": "value_52"
+        },
+        {
+          "employee_id": 53,
+          "name": "person_53",
+          "email": "user_53@example.com",
+          "department": "value_53"
+        },
+        {
+          "employee_id": 54,
+          "name": "person_54",
+          "email": "user_54@example.com",
+          "department": "value_54"
+        },
+        {
+          "employee_id": 55,
+          "name": "person_55",
+          "email": "user_55@example.com",
+          "department": "value_55"
+        },
+        {
+          "employee_id": 56,
+          "name": "person_56",
+          "email": "user_56@example.com",
+          "department": "value_56"
+        },
+        {
+          "employee_id": 57,
+          "name": "person_57",
+          "email": "user_57@example.com",
+          "department": "value_57"
+        },
+        {
+          "employee_id": 58,
+          "name": "person_58",
+          "email": "user_58@example.com",
+          "department": "value_58"
+        },
+        {
+          "employee_id": 59,
+          "name": "person_59",
+          "email": "user_59@example.com",
+          "department": "value_59"
+        },
+        {
+          "employee_id": 60,
+          "name": "person_60",
+          "email": "user_60@example.com",
+          "department": "value_60"
+        },
+        {
+          "employee_id": 61,
+          "name": "person_61",
+          "email": "user_61@example.com",
+          "department": "value_61"
+        },
+        {
+          "employee_id": 62,
+          "name": "person_62",
+          "email": "user_62@example.com",
+          "department": "value_62"
+        },
+        {
+          "employee_id": 63,
+          "name": "person_63",
+          "email": "user_63@example.com",
+          "department": "value_63"
+        },
+        {
+          "employee_id": 64,
+          "name": "person_64",
+          "email": "user_64@example.com",
+          "department": "value_64"
+        },
+        {
+          "employee_id": 65,
+          "name": "person_65",
+          "email": "user_65@example.com",
+          "department": "value_65"
+        },
+        {
+          "employee_id": 66,
+          "name": "person_66",
+          "email": "user_66@example.com",
+          "department": "value_66"
+        },
+        {
+          "employee_id": 67,
+          "name": "person_67",
+          "email": "user_67@example.com",
+          "department": "value_67"
+        },
+        {
+          "employee_id": 68,
+          "name": "person_68",
+          "email": "user_68@example.com",
+          "department": "value_68"
+        },
+        {
+          "employee_id": 69,
+          "name": "person_69",
+          "email": "user_69@example.com",
+          "department": "value_69"
+        },
+        {
+          "employee_id": 70,
+          "name": "person_70",
+          "email": "user_70@example.com",
+          "department": "value_70"
+        },
+        {
+          "employee_id": 71,
+          "name": "person_71",
+          "email": "user_71@example.com",
+          "department": "value_71"
+        },
+        {
+          "employee_id": 72,
+          "name": "person_72",
+          "email": "user_72@example.com",
+          "department": "value_72"
+        },
+        {
+          "employee_id": 73,
+          "name": "person_73",
+          "email": "user_73@example.com",
+          "department": "value_73"
+        },
+        {
+          "employee_id": 74,
+          "name": "person_74",
+          "email": "user_74@example.com",
+          "department": "value_74"
+        },
+        {
+          "employee_id": 75,
+          "name": "person_75",
+          "email": "user_75@example.com",
+          "department": "value_75"
+        },
+        {
+          "employee_id": 76,
+          "name": "person_76",
+          "email": "user_76@example.com",
+          "department": "value_76"
+        },
+        {
+          "employee_id": 77,
+          "name": "person_77",
+          "email": "user_77@example.com",
+          "department": "value_77"
+        },
+        {
+          "employee_id": 78,
+          "name": "person_78",
+          "email": "user_78@example.com",
+          "department": "value_78"
+        },
+        {
+          "employee_id": 79,
+          "name": "person_79",
+          "email": "user_79@example.com",
+          "department": "value_79"
+        },
+        {
+          "employee_id": 80,
+          "name": "person_80",
+          "email": "user_80@example.com",
+          "department": "value_80"
+        },
+        {
+          "employee_id": 81,
+          "name": "person_81",
+          "email": "user_81@example.com",
+          "department": "value_81"
+        },
+        {
+          "employee_id": 82,
+          "name": "person_82",
+          "email": "user_82@example.com",
+          "department": "value_82"
+        },
+        {
+          "employee_id": 83,
+          "name": "person_83",
+          "email": "user_83@example.com",
+          "department": "value_83"
+        },
+        {
+          "employee_id": 84,
+          "name": "person_84",
+          "email": "user_84@example.com",
+          "department": "value_84"
+        },
+        {
+          "employee_id": 85,
+          "name": "person_85",
+          "email": "user_85@example.com",
+          "department": "value_85"
+        },
+        {
+          "employee_id": 86,
+          "name": "person_86",
+          "email": "user_86@example.com",
+          "department": "value_86"
+        },
+        {
+          "employee_id": 87,
+          "name": "person_87",
+          "email": "user_87@example.com",
+          "department": "value_87"
+        },
+        {
+          "employee_id": 88,
+          "name": "person_88",
+          "email": "user_88@example.com",
+          "department": "value_88"
+        },
+        {
+          "employee_id": 89,
+          "name": "person_89",
+          "email": "user_89@example.com",
+          "department": "value_89"
+        },
+        {
+          "employee_id": 90,
+          "name": "person_90",
+          "email": "user_90@example.com",
+          "department": "value_90"
+        },
+        {
+          "employee_id": 91,
+          "name": "person_91",
+          "email": "user_91@example.com",
+          "department": "value_91"
+        },
+        {
+          "employee_id": 92,
+          "name": "person_92",
+          "email": "user_92@example.com",
+          "department": "value_92"
+        },
+        {
+          "employee_id": 93,
+          "name": "person_93",
+          "email": "user_93@example.com",
+          "department": "value_93"
+        },
+        {
+          "employee_id": 94,
+          "name": "person_94",
+          "email": "user_94@example.com",
+          "department": "value_94"
+        },
+        {
+          "employee_id": 95,
+          "name": "person_95",
+          "email": "user_95@example.com",
+          "department": "value_95"
+        },
+        {
+          "employee_id": 96,
+          "name": "person_96",
+          "email": "user_96@example.com",
+          "department": "value_96"
+        },
+        {
+          "employee_id": 97,
+          "name": "person_97",
+          "email": "user_97@example.com",
+          "department": "value_97"
+        },
+        {
+          "employee_id": 98,
+          "name": "person_98",
+          "email": "user_98@example.com",
+          "department": "value_98"
+        },
+        {
+          "employee_id": 99,
+          "name": "person_99",
+          "email": "user_99@example.com",
+          "department": "value_99"
+        },
+        {
+          "employee_id": 100,
+          "name": "person_100",
+          "email": "user_100@example.com",
+          "department": "value_100"
+        },
+        {
+          "employee_id": 101,
+          "name": "person_101",
+          "email": "user_101@example.com",
+          "department": "value_101"
+        },
+        {
+          "employee_id": 102,
+          "name": "person_102",
+          "email": "user_102@example.com",
+          "department": "value_102"
+        },
+        {
+          "employee_id": 103,
+          "name": "person_103",
+          "email": "user_103@example.com",
+          "department": "value_103"
+        },
+        {
+          "employee_id": 104,
+          "name": "person_104",
+          "email": "user_104@example.com",
+          "department": "value_104"
+        },
+        {
+          "employee_id": 105,
+          "name": "person_105",
+          "email": "user_105@example.com",
+          "department": "value_105"
+        },
+        {
+          "employee_id": 106,
+          "name": "person_106",
+          "email": "user_106@example.com",
+          "department": "value_106"
+        },
+        {
+          "employee_id": 107,
+          "name": "person_107",
+          "email": "user_107@example.com",
+          "department": "value_107"
+        },
+        {
+          "employee_id": 108,
+          "name": "person_108",
+          "email": "user_108@example.com",
+          "department": "value_108"
+        },
+        {
+          "employee_id": 109,
+          "name": "person_109",
+          "email": "user_109@example.com",
+          "department": "value_109"
+        },
+        {
+          "employee_id": 110,
+          "name": "person_110",
+          "email": "user_110@example.com",
+          "department": "value_110"
+        },
+        {
+          "employee_id": 111,
+          "name": "person_111",
+          "email": "user_111@example.com",
+          "department": "value_111"
+        },
+        {
+          "employee_id": 112,
+          "name": "person_112",
+          "email": "user_112@example.com",
+          "department": "value_112"
+        },
+        {
+          "employee_id": 113,
+          "name": "person_113",
+          "email": "user_113@example.com",
+          "department": "value_113"
+        },
+        {
+          "employee_id": 114,
+          "name": "person_114",
+          "email": "user_114@example.com",
+          "department": "value_114"
+        },
+        {
+          "employee_id": 115,
+          "name": "person_115",
+          "email": "user_115@example.com",
+          "department": "value_115"
+        },
+        {
+          "employee_id": 116,
+          "name": "person_116",
+          "email": "user_116@example.com",
+          "department": "value_116"
+        },
+        {
+          "employee_id": 117,
+          "name": "person_117",
+          "email": "user_117@example.com",
+          "department": "value_117"
+        },
+        {
+          "employee_id": 118,
+          "name": "person_118",
+          "email": "user_118@example.com",
+          "department": "value_118"
+        },
+        {
+          "employee_id": 119,
+          "name": "person_119",
+          "email": "user_119@example.com",
+          "department": "value_119"
+        },
+        {
+          "employee_id": 120,
+          "name": "person_120",
+          "email": "user_120@example.com",
+          "department": "value_120"
+        },
+        {
+          "employee_id": 121,
+          "name": "person_121",
+          "email": "user_121@example.com",
+          "department": "value_121"
+        },
+        {
+          "employee_id": 122,
+          "name": "person_122",
+          "email": "user_122@example.com",
+          "department": "value_122"
+        },
+        {
+          "employee_id": 123,
+          "name": "person_123",
+          "email": "user_123@example.com",
+          "department": "value_123"
+        },
+        {
+          "employee_id": 124,
+          "name": "person_124",
+          "email": "user_124@example.com",
+          "department": "value_124"
+        },
+        {
+          "employee_id": 125,
+          "name": "person_125",
+          "email": "user_125@example.com",
+          "department": "value_125"
+        },
+        {
+          "employee_id": 126,
+          "name": "person_126",
+          "email": "user_126@example.com",
+          "department": "value_126"
+        },
+        {
+          "employee_id": 127,
+          "name": "person_127",
+          "email": "user_127@example.com",
+          "department": "value_127"
+        },
+        {
+          "employee_id": 128,
+          "name": "person_128",
+          "email": "user_128@example.com",
+          "department": "value_128"
+        },
+        {
+          "employee_id": 129,
+          "name": "person_129",
+          "email": "user_129@example.com",
+          "department": "value_129"
+        },
+        {
+          "employee_id": 130,
+          "name": "person_130",
+          "email": "user_130@example.com",
+          "department": "value_130"
+        },
+        {
+          "employee_id": 131,
+          "name": "person_131",
+          "email": "user_131@example.com",
+          "department": "value_131"
+        },
+        {
+          "employee_id": 132,
+          "name": "person_132",
+          "email": "user_132@example.com",
+          "department": "value_132"
+        },
+        {
+          "employee_id": 133,
+          "name": "person_133",
+          "email": "user_133@example.com",
+          "department": "value_133"
+        },
+        {
+          "employee_id": 134,
+          "name": "person_134",
+          "email": "user_134@example.com",
+          "department": "value_134"
+        },
+        {
+          "employee_id": 135,
+          "name": "person_135",
+          "email": "user_135@example.com",
+          "department": "value_135"
+        },
+        {
+          "employee_id": 136,
+          "name": "person_136",
+          "email": "user_136@example.com",
+          "department": "value_136"
+        },
+        {
+          "employee_id": 137,
+          "name": "person_137",
+          "email": "user_137@example.com",
+          "department": "value_137"
+        },
+        {
+          "employee_id": 138,
+          "name": "person_138",
+          "email": "user_138@example.com",
+          "department": "value_138"
+        },
+        {
+          "employee_id": 139,
+          "name": "person_139",
+          "email": "user_139@example.com",
+          "department": "value_139"
+        },
+        {
+          "employee_id": 140,
+          "name": "person_140",
+          "email": "user_140@example.com",
+          "department": "value_140"
+        },
+        {
+          "employee_id": 141,
+          "name": "person_141",
+          "email": "user_141@example.com",
+          "department": "value_141"
+        },
+        {
+          "employee_id": 142,
+          "name": "person_142",
+          "email": "user_142@example.com",
+          "department": "value_142"
+        },
+        {
+          "employee_id": 143,
+          "name": "person_143",
+          "email": "user_143@example.com",
+          "department": "value_143"
+        },
+        {
+          "employee_id": 144,
+          "name": "person_144",
+          "email": "user_144@example.com",
+          "department": "value_144"
+        },
+        {
+          "employee_id": 145,
+          "name": "person_145",
+          "email": "user_145@example.com",
+          "department": "value_145"
+        },
+        {
+          "employee_id": 146,
+          "name": "person_146",
+          "email": "user_146@example.com",
+          "department": "value_146"
+        },
+        {
+          "employee_id": 147,
+          "name": "person_147",
+          "email": "user_147@example.com",
+          "department": "value_147"
+        },
+        {
+          "employee_id": 148,
+          "name": "person_148",
+          "email": "user_148@example.com",
+          "department": "value_148"
+        },
+        {
+          "employee_id": 149,
+          "name": "person_149",
+          "email": "user_149@example.com",
+          "department": "value_149"
+        },
+        {
+          "employee_id": 6,
+          "name": "person_6",
+          "email": "user_6@example.com",
+          "department": "value_6"
+        },
+        {
+          "employee_id": 143,
+          "name": "person_143",
+          "email": "user_143@example.com",
+          "department": "value_143"
+        },
+        {
+          "employee_id": 50,
+          "name": "person_50",
+          "email": "user_50@example.com",
+          "department": "value_50"
+        },
+        {
+          "employee_id": 139,
+          "name": "person_139",
+          "email": "user_139@example.com",
+          "department": "value_139"
+        },
+        {
+          "employee_id": 107,
+          "name": "person_107",
+          "email": "user_107@example.com",
+          "department": "value_107"
+        },
+        {
+          "employee_id": 56,
+          "name": "person_56",
+          "email": "user_56@example.com",
+          "department": "value_56"
+        },
+        {
+          "employee_id": 114,
+          "name": "person_114",
+          "email": "user_114@example.com",
+          "department": "value_114"
+        },
+        {
+          "employee_id": 71,
+          "name": "person_71",
+          "email": "user_71@example.com",
+          "department": "value_71"
+        }
+      ],
+      "clean_data": [
+        {
+          "employee_id": 0,
+          "name": "person_0",
+          "email": "user_0@example.com",
+          "department": "value_0"
+        },
+        {
+          "employee_id": 1,
+          "name": "person_1",
+          "email": "user_1@example.com",
+          "department": "value_1"
+        },
+        {
+          "employee_id": 2,
+          "name": "person_2",
+          "email": "user_2@example.com",
+          "department": "value_2"
+        },
+        {
+          "employee_id": 3,
+          "name": "person_3",
+          "email": "user_3@example.com",
+          "department": "value_3"
+        },
+        {
+          "employee_id": 4,
+          "name": "person_4",
+          "email": "user_4@example.com",
+          "department": "value_4"
+        },
+        {
+          "employee_id": 5,
+          "name": "person_5",
+          "email": "user_5@example.com",
+          "department": "value_5"
+        },
+        {
+          "employee_id": 6,
+          "name": "person_6",
+          "email": "user_6@example.com",
+          "department": "value_6"
+        },
+        {
+          "employee_id": 7,
+          "name": "person_7",
+          "email": "user_7@example.com",
+          "department": "value_7"
+        },
+        {
+          "employee_id": 8,
+          "name": "person_8",
+          "email": "user_8@example.com",
+          "department": "value_8"
+        },
+        {
+          "employee_id": 9,
+          "name": "person_9",
+          "email": "user_9@example.com",
+          "department": "value_9"
+        },
+        {
+          "employee_id": 10,
+          "name": "person_10",
+          "email": "user_10@example.com",
+          "department": "value_10"
+        },
+        {
+          "employee_id": 11,
+          "name": "person_11",
+          "email": "user_11@example.com",
+          "department": "value_11"
+        },
+        {
+          "employee_id": 12,
+          "name": "person_12",
+          "email": "user_12@example.com",
+          "department": "value_12"
+        },
+        {
+          "employee_id": 13,
+          "name": "person_13",
+          "email": "user_13@example.com",
+          "department": "value_13"
+        },
+        {
+          "employee_id": 14,
+          "name": "person_14",
+          "email": "user_14@example.com",
+          "department": "value_14"
+        },
+        {
+          "employee_id": 15,
+          "name": "person_15",
+          "email": "user_15@example.com",
+          "department": "value_15"
+        },
+        {
+          "employee_id": 16,
+          "name": "person_16",
+          "email": "user_16@example.com",
+          "department": "value_16"
+        },
+        {
+          "employee_id": 17,
+          "name": "person_17",
+          "email": "user_17@example.com",
+          "department": "value_17"
+        },
+        {
+          "employee_id": 18,
+          "name": "person_18",
+          "email": "user_18@example.com",
+          "department": "value_18"
+        },
+        {
+          "employee_id": 19,
+          "name": "person_19",
+          "email": "user_19@example.com",
+          "department": "value_19"
+        },
+        {
+          "employee_id": 20,
+          "name": "person_20",
+          "email": "user_20@example.com",
+          "department": "value_20"
+        },
+        {
+          "employee_id": 21,
+          "name": "person_21",
+          "email": "user_21@example.com",
+          "department": "value_21"
+        },
+        {
+          "employee_id": 22,
+          "name": "person_22",
+          "email": "user_22@example.com",
+          "department": "value_22"
+        },
+        {
+          "employee_id": 23,
+          "name": "person_23",
+          "email": "user_23@example.com",
+          "department": "value_23"
+        },
+        {
+          "employee_id": 24,
+          "name": "person_24",
+          "email": "user_24@example.com",
+          "department": "value_24"
+        },
+        {
+          "employee_id": 25,
+          "name": "person_25",
+          "email": "user_25@example.com",
+          "department": "value_25"
+        },
+        {
+          "employee_id": 26,
+          "name": "person_26",
+          "email": "user_26@example.com",
+          "department": "value_26"
+        },
+        {
+          "employee_id": 27,
+          "name": "person_27",
+          "email": "user_27@example.com",
+          "department": "value_27"
+        },
+        {
+          "employee_id": 28,
+          "name": "person_28",
+          "email": "user_28@example.com",
+          "department": "value_28"
+        },
+        {
+          "employee_id": 29,
+          "name": "person_29",
+          "email": "user_29@example.com",
+          "department": "value_29"
+        },
+        {
+          "employee_id": 30,
+          "name": "person_30",
+          "email": "user_30@example.com",
+          "department": "value_30"
+        },
+        {
+          "employee_id": 31,
+          "name": "person_31",
+          "email": "user_31@example.com",
+          "department": "value_31"
+        },
+        {
+          "employee_id": 32,
+          "name": "person_32",
+          "email": "user_32@example.com",
+          "department": "value_32"
+        },
+        {
+          "employee_id": 33,
+          "name": "person_33",
+          "email": "user_33@example.com",
+          "department": "value_33"
+        },
+        {
+          "employee_id": 34,
+          "name": "person_34",
+          "email": "user_34@example.com",
+          "department": "value_34"
+        },
+        {
+          "employee_id": 35,
+          "name": "person_35",
+          "email": "user_35@example.com",
+          "department": "value_35"
+        },
+        {
+          "employee_id": 36,
+          "name": "person_36",
+          "email": "user_36@example.com",
+          "department": "value_36"
+        },
+        {
+          "employee_id": 37,
+          "name": "person_37",
+          "email": "user_37@example.com",
+          "department": "value_37"
+        },
+        {
+          "employee_id": 38,
+          "name": "person_38",
+          "email": "user_38@example.com",
+          "department": "value_38"
+        },
+        {
+          "employee_id": 39,
+          "name": "person_39",
+          "email": "user_39@example.com",
+          "department": "value_39"
+        },
+        {
+          "employee_id": 40,
+          "name": "person_40",
+          "email": "user_40@example.com",
+          "department": "value_40"
+        },
+        {
+          "employee_id": 41,
+          "name": "person_41",
+          "email": "user_41@example.com",
+          "department": "value_41"
+        },
+        {
+          "employee_id": 42,
+          "name": "person_42",
+          "email": "user_42@example.com",
+          "department": "value_42"
+        },
+        {
+          "employee_id": 43,
+          "name": "person_43",
+          "email": "user_43@example.com",
+          "department": "value_43"
+        },
+        {
+          "employee_id": 44,
+          "name": "person_44",
+          "email": "user_44@example.com",
+          "department": "value_44"
+        },
+        {
+          "employee_id": 45,
+          "name": "person_45",
+          "email": "user_45@example.com",
+          "department": "value_45"
+        },
+        {
+          "employee_id": 46,
+          "name": "person_46",
+          "email": "user_46@example.com",
+          "department": "value_46"
+        },
+        {
+          "employee_id": 47,
+          "name": "person_47",
+          "email": "user_47@example.com",
+          "department": "value_47"
+        },
+        {
+          "employee_id": 48,
+          "name": "person_48",
+          "email": "user_48@example.com",
+          "department": "value_48"
+        },
+        {
+          "employee_id": 49,
+          "name": "person_49",
+          "email": "user_49@example.com",
+          "department": "value_49"
+        },
+        {
+          "employee_id": 50,
+          "name": "person_50",
+          "email": "user_50@example.com",
+          "department": "value_50"
+        },
+        {
+          "employee_id": 51,
+          "name": "person_51",
+          "email": "user_51@example.com",
+          "department": "value_51"
+        },
+        {
+          "employee_id": 52,
+          "name": "person_52",
+          "email": "user_52@example.com",
+          "department": "value_52"
+        },
+        {
+          "employee_id": 53,
+          "name": "person_53",
+          "email": "user_53@example.com",
+          "department": "value_53"
+        },
+        {
+          "employee_id": 54,
+          "name": "person_54",
+          "email": "user_54@example.com",
+          "department": "value_54"
+        },
+        {
+          "employee_id": 55,
+          "name": "person_55",
+          "email": "user_55@example.com",
+          "department": "value_55"
+        },
+        {
+          "employee_id": 56,
+          "name": "person_56",
+          "email": "user_56@example.com",
+          "department": "value_56"
+        },
+        {
+          "employee_id": 57,
+          "name": "person_57",
+          "email": "user_57@example.com",
+          "department": "value_57"
+        },
+        {
+          "employee_id": 58,
+          "name": "person_58",
+          "email": "user_58@example.com",
+          "department": "value_58"
+        },
+        {
+          "employee_id": 59,
+          "name": "person_59",
+          "email": "user_59@example.com",
+          "department": "value_59"
+        },
+        {
+          "employee_id": 60,
+          "name": "person_60",
+          "email": "user_60@example.com",
+          "department": "value_60"
+        },
+        {
+          "employee_id": 61,
+          "name": "person_61",
+          "email": "user_61@example.com",
+          "department": "value_61"
+        },
+        {
+          "employee_id": 62,
+          "name": "person_62",
+          "email": "user_62@example.com",
+          "department": "value_62"
+        },
+        {
+          "employee_id": 63,
+          "name": "person_63",
+          "email": "user_63@example.com",
+          "department": "value_63"
+        },
+        {
+          "employee_id": 64,
+          "name": "person_64",
+          "email": "user_64@example.com",
+          "department": "value_64"
+        },
+        {
+          "employee_id": 65,
+          "name": "person_65",
+          "email": "user_65@example.com",
+          "department": "value_65"
+        },
+        {
+          "employee_id": 66,
+          "name": "person_66",
+          "email": "user_66@example.com",
+          "department": "value_66"
+        },
+        {
+          "employee_id": 67,
+          "name": "person_67",
+          "email": "user_67@example.com",
+          "department": "value_67"
+        },
+        {
+          "employee_id": 68,
+          "name": "person_68",
+          "email": "user_68@example.com",
+          "department": "value_68"
+        },
+        {
+          "employee_id": 69,
+          "name": "person_69",
+          "email": "user_69@example.com",
+          "department": "value_69"
+        },
+        {
+          "employee_id": 70,
+          "name": "person_70",
+          "email": "user_70@example.com",
+          "department": "value_70"
+        },
+        {
+          "employee_id": 71,
+          "name": "person_71",
+          "email": "user_71@example.com",
+          "department": "value_71"
+        },
+        {
+          "employee_id": 72,
+          "name": "person_72",
+          "email": "user_72@example.com",
+          "department": "value_72"
+        },
+        {
+          "employee_id": 73,
+          "name": "person_73",
+          "email": "user_73@example.com",
+          "department": "value_73"
+        },
+        {
+          "employee_id": 74,
+          "name": "person_74",
+          "email": "user_74@example.com",
+          "department": "value_74"
+        },
+        {
+          "employee_id": 75,
+          "name": "person_75",
+          "email": "user_75@example.com",
+          "department": "value_75"
+        },
+        {
+          "employee_id": 76,
+          "name": "person_76",
+          "email": "user_76@example.com",
+          "department": "value_76"
+        },
+        {
+          "employee_id": 77,
+          "name": "person_77",
+          "email": "user_77@example.com",
+          "department": "value_77"
+        },
+        {
+          "employee_id": 78,
+          "name": "person_78",
+          "email": "user_78@example.com",
+          "department": "value_78"
+        },
+        {
+          "employee_id": 79,
+          "name": "person_79",
+          "email": "user_79@example.com",
+          "department": "value_79"
+        },
+        {
+          "employee_id": 80,
+          "name": "person_80",
+          "email": "user_80@example.com",
+          "department": "value_80"
+        },
+        {
+          "employee_id": 81,
+          "name": "person_81",
+          "email": "user_81@example.com",
+          "department": "value_81"
+        },
+        {
+          "employee_id": 82,
+          "name": "person_82",
+          "email": "user_82@example.com",
+          "department": "value_82"
+        },
+        {
+          "employee_id": 83,
+          "name": "person_83",
+          "email": "user_83@example.com",
+          "department": "value_83"
+        },
+        {
+          "employee_id": 84,
+          "name": "person_84",
+          "email": "user_84@example.com",
+          "department": "value_84"
+        },
+        {
+          "employee_id": 85,
+          "name": "person_85",
+          "email": "user_85@example.com",
+          "department": "value_85"
+        },
+        {
+          "employee_id": 86,
+          "name": "person_86",
+          "email": "user_86@example.com",
+          "department": "value_86"
+        },
+        {
+          "employee_id": 87,
+          "name": "person_87",
+          "email": "user_87@example.com",
+          "department": "value_87"
+        },
+        {
+          "employee_id": 88,
+          "name": "person_88",
+          "email": "user_88@example.com",
+          "department": "value_88"
+        },
+        {
+          "employee_id": 89,
+          "name": "person_89",
+          "email": "user_89@example.com",
+          "department": "value_89"
+        },
+        {
+          "employee_id": 90,
+          "name": "person_90",
+          "email": "user_90@example.com",
+          "department": "value_90"
+        },
+        {
+          "employee_id": 91,
+          "name": "person_91",
+          "email": "user_91@example.com",
+          "department": "value_91"
+        },
+        {
+          "employee_id": 92,
+          "name": "person_92",
+          "email": "user_92@example.com",
+          "department": "value_92"
+        },
+        {
+          "employee_id": 93,
+          "name": "person_93",
+          "email": "user_93@example.com",
+          "department": "value_93"
+        },
+        {
+          "employee_id": 94,
+          "name": "person_94",
+          "email": "user_94@example.com",
+          "department": "value_94"
+        },
+        {
+          "employee_id": 95,
+          "name": "person_95",
+          "email": "user_95@example.com",
+          "department": "value_95"
+        },
+        {
+          "employee_id": 96,
+          "name": "person_96",
+          "email": "user_96@example.com",
+          "department": "value_96"
+        },
+        {
+          "employee_id": 97,
+          "name": "person_97",
+          "email": "user_97@example.com",
+          "department": "value_97"
+        },
+        {
+          "employee_id": 98,
+          "name": "person_98",
+          "email": "user_98@example.com",
+          "department": "value_98"
+        },
+        {
+          "employee_id": 99,
+          "name": "person_99",
+          "email": "user_99@example.com",
+          "department": "value_99"
+        },
+        {
+          "employee_id": 100,
+          "name": "person_100",
+          "email": "user_100@example.com",
+          "department": "value_100"
+        },
+        {
+          "employee_id": 101,
+          "name": "person_101",
+          "email": "user_101@example.com",
+          "department": "value_101"
+        },
+        {
+          "employee_id": 102,
+          "name": "person_102",
+          "email": "user_102@example.com",
+          "department": "value_102"
+        },
+        {
+          "employee_id": 103,
+          "name": "person_103",
+          "email": "user_103@example.com",
+          "department": "value_103"
+        },
+        {
+          "employee_id": 104,
+          "name": "person_104",
+          "email": "user_104@example.com",
+          "department": "value_104"
+        },
+        {
+          "employee_id": 105,
+          "name": "person_105",
+          "email": "user_105@example.com",
+          "department": "value_105"
+        },
+        {
+          "employee_id": 106,
+          "name": "person_106",
+          "email": "user_106@example.com",
+          "department": "value_106"
+        },
+        {
+          "employee_id": 107,
+          "name": "person_107",
+          "email": "user_107@example.com",
+          "department": "value_107"
+        },
+        {
+          "employee_id": 108,
+          "name": "person_108",
+          "email": "user_108@example.com",
+          "department": "value_108"
+        },
+        {
+          "employee_id": 109,
+          "name": "person_109",
+          "email": "user_109@example.com",
+          "department": "value_109"
+        },
+        {
+          "employee_id": 110,
+          "name": "person_110",
+          "email": "user_110@example.com",
+          "department": "value_110"
+        },
+        {
+          "employee_id": 111,
+          "name": "person_111",
+          "email": "user_111@example.com",
+          "department": "value_111"
+        },
+        {
+          "employee_id": 112,
+          "name": "person_112",
+          "email": "user_112@example.com",
+          "department": "value_112"
+        },
+        {
+          "employee_id": 113,
+          "name": "person_113",
+          "email": "user_113@example.com",
+          "department": "value_113"
+        },
+        {
+          "employee_id": 114,
+          "name": "person_114",
+          "email": "user_114@example.com",
+          "department": "value_114"
+        },
+        {
+          "employee_id": 115,
+          "name": "person_115",
+          "email": "user_115@example.com",
+          "department": "value_115"
+        },
+        {
+          "employee_id": 116,
+          "name": "person_116",
+          "email": "user_116@example.com",
+          "department": "value_116"
+        },
+        {
+          "employee_id": 117,
+          "name": "person_117",
+          "email": "user_117@example.com",
+          "department": "value_117"
+        },
+        {
+          "employee_id": 118,
+          "name": "person_118",
+          "email": "user_118@example.com",
+          "department": "value_118"
+        },
+        {
+          "employee_id": 119,
+          "name": "person_119",
+          "email": "user_119@example.com",
+          "department": "value_119"
+        },
+        {
+          "employee_id": 120,
+          "name": "person_120",
+          "email": "user_120@example.com",
+          "department": "value_120"
+        },
+        {
+          "employee_id": 121,
+          "name": "person_121",
+          "email": "user_121@example.com",
+          "department": "value_121"
+        },
+        {
+          "employee_id": 122,
+          "name": "person_122",
+          "email": "user_122@example.com",
+          "department": "value_122"
+        },
+        {
+          "employee_id": 123,
+          "name": "person_123",
+          "email": "user_123@example.com",
+          "department": "value_123"
+        },
+        {
+          "employee_id": 124,
+          "name": "person_124",
+          "email": "user_124@example.com",
+          "department": "value_124"
+        },
+        {
+          "employee_id": 125,
+          "name": "person_125",
+          "email": "user_125@example.com",
+          "department": "value_125"
+        },
+        {
+          "employee_id": 126,
+          "name": "person_126",
+          "email": "user_126@example.com",
+          "department": "value_126"
+        },
+        {
+          "employee_id": 127,
+          "name": "person_127",
+          "email": "user_127@example.com",
+          "department": "value_127"
+        },
+        {
+          "employee_id": 128,
+          "name": "person_128",
+          "email": "user_128@example.com",
+          "department": "value_128"
+        },
+        {
+          "employee_id": 129,
+          "name": "person_129",
+          "email": "user_129@example.com",
+          "department": "value_129"
+        },
+        {
+          "employee_id": 130,
+          "name": "person_130",
+          "email": "user_130@example.com",
+          "department": "value_130"
+        },
+        {
+          "employee_id": 131,
+          "name": "person_131",
+          "email": "user_131@example.com",
+          "department": "value_131"
+        },
+        {
+          "employee_id": 132,
+          "name": "person_132",
+          "email": "user_132@example.com",
+          "department": "value_132"
+        },
+        {
+          "employee_id": 133,
+          "name": "person_133",
+          "email": "user_133@example.com",
+          "department": "value_133"
+        },
+        {
+          "employee_id": 134,
+          "name": "person_134",
+          "email": "user_134@example.com",
+          "department": "value_134"
+        },
+        {
+          "employee_id": 135,
+          "name": "person_135",
+          "email": "user_135@example.com",
+          "department": "value_135"
+        },
+        {
+          "employee_id": 136,
+          "name": "person_136",
+          "email": "user_136@example.com",
+          "department": "value_136"
+        },
+        {
+          "employee_id": 137,
+          "name": "person_137",
+          "email": "user_137@example.com",
+          "department": "value_137"
+        },
+        {
+          "employee_id": 138,
+          "name": "person_138",
+          "email": "user_138@example.com",
+          "department": "value_138"
+        },
+        {
+          "employee_id": 139,
+          "name": "person_139",
+          "email": "user_139@example.com",
+          "department": "value_139"
+        },
+        {
+          "employee_id": 140,
+          "name": "person_140",
+          "email": "user_140@example.com",
+          "department": "value_140"
+        },
+        {
+          "employee_id": 141,
+          "name": "person_141",
+          "email": "user_141@example.com",
+          "department": "value_141"
+        },
+        {
+          "employee_id": 142,
+          "name": "person_142",
+          "email": "user_142@example.com",
+          "department": "value_142"
+        },
+        {
+          "employee_id": 143,
+          "name": "person_143",
+          "email": "user_143@example.com",
+          "department": "value_143"
+        },
+        {
+          "employee_id": 144,
+          "name": "person_144",
+          "email": "user_144@example.com",
+          "department": "value_144"
+        },
+        {
+          "employee_id": 145,
+          "name": "person_145",
+          "email": "user_145@example.com",
+          "department": "value_145"
+        },
+        {
+          "employee_id": 146,
+          "name": "person_146",
+          "email": "user_146@example.com",
+          "department": "value_146"
+        },
+        {
+          "employee_id": 147,
+          "name": "person_147",
+          "email": "user_147@example.com",
+          "department": "value_147"
+        },
+        {
+          "employee_id": 148,
+          "name": "person_148",
+          "email": "user_148@example.com",
+          "department": "value_148"
+        },
+        {
+          "employee_id": 149,
+          "name": "person_149",
+          "email": "user_149@example.com",
+          "department": "value_149"
+        }
+      ],
+      "expected_issues": [
+        "duplicates"
+      ],
+      "grading_criteria": {
+        "metric": "duplicate_count",
+        "target": 0,
+        "tolerance": 0,
+        "description": "All duplicate rows must be removed"
+      }
+    }
+  ]
+}

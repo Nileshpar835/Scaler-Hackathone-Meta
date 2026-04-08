@@ -1,0 +1,85 @@
+version: "1.0"
+name: DataCleanerEnv
+description: |
+  Real-world data cleaning and ETL environment for AI agents.
+  Agents learn to autonomously clean messy datasets by applying 
+  operations to fix missing values, duplicates, type errors, and outliers.
+
+environment:
+  class: DataCleanerEnv
+  module: environment.env
+
+observation:
+  class: Observation
+  module: environment.observation
+
+action:
+  class: Action
+  module: environment.action
+
+reward:
+  class: Reward
+  module: environment.reward
+
+metadata:
+  version: 0.1.0
+  author: Hackathon Participant
+  max_episode_steps: 30
+  action_space: discrete
+  observation_space: structured
+  
+  supported_operations:
+    - FILL_MISSING
+    - REMOVE_DUPLICATES
+    - FIX_TYPES
+    - REMOVE_OUTLIERS
+    - DECLARE_CLEAN
+  
+  supported_strategies:
+    FILL_MISSING:
+      - mean
+      - median
+      - mode
+      - forward_fill
+      - drop
+    FIX_TYPES:
+      - infer
+    REMOVE_OUTLIERS:
+      - iqr
+      - zscore
+  
+  tasks:
+    - task_id: task_easy
+      difficulty: easy
+      description: Remove all duplicate rows from an employee email list
+      operations: [REMOVE_DUPLICATES]
+      expected_issues: [duplicates]
+      num_datasets: 3
+      
+    - task_id: task_medium
+      difficulty: medium
+      description: Clean a customer database with missing values, duplicates, and type errors
+      operations: [REMOVE_DUPLICATES, FILL_MISSING, FIX_TYPES]
+      expected_issues: [duplicates, missing_values, type_errors]
+      num_datasets: 3
+      
+    - task_id: task_hard
+      difficulty: hard
+      description: Clean financial dataset with mixed quality issues including ambiguous outliers
+      operations: [REMOVE_DUPLICATES, FILL_MISSING, FIX_TYPES, REMOVE_OUTLIERS]
+      expected_issues: [duplicates, missing_values, type_errors, outliers]
+      num_datasets: 3
+
+  reward_bounds:
+    min: -1.0
+    max: 1.0
+  
+  episode_rewards:
+    correct_operation: 0.15
+    issue_reduction_bonus: 0.10
+    no_effect_penalty: -0.02
+    data_corruption_penalty: -0.30
+    invalid_operation_penalty: -0.05
+    clean_declaration_bonus: 0.50
+    efficiency_multiplier: 0.10
+    false_declaration_penalty: -0.50
